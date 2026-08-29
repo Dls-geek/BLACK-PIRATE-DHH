@@ -1,22 +1,22 @@
-# daily-lab
+# FOXFIRE
 
 ```
-C O M I T E R _ D I V
->>  polyglot scratch space
+F O X F I R E
+>>  polyglot mixer core
 ```
 
-Tiny language experiments so they don't clutter real repos.
-Rust, C, C++, Ruby, Python, Go, JavaScript, Java, Bash.
+One scratch project. Nine languages. Same files grow over time —
+new mixers land as functions on the FOXFIRE core, not new throwaway files.
 
 ## Layout
 
 ```
-src/rust/   src/c/     src/cpp/    src/ruby/
-src/python/ src/go/    src/javascript/
-src/java/   src/bash/
+src/rust/foxfire.rs      src/c/foxfire.c
+src/cpp/foxfire.cpp      src/ruby/foxfire.rb
+src/python/foxfire.py    src/go/foxfire.go
+src/javascript/foxfire.js
+src/java/Foxfire.java    src/bash/foxfire.sh
 ```
-
-Each file is a self-contained mixer — compile or run it on its own.
 
 ## License
 
