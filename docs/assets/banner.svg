@@ -1,25 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="280" viewBox="0 0 1120 280">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="BLACK-PIRATE-DHH">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0a0a0a"/>
-      <stop offset="100%" stop-color="#1a1208"/>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070707"/>
+      <stop offset="55%" stop-color="#12100c"/>
+      <stop offset="100%" stop-color="#1c160c"/>
     </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#c9a227"/>
-      <stop offset="50%" stop-color="#ffe566"/>
-      <stop offset="100%" stop-color="#c9a227"/>
+    <linearGradient id="y" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a67c00"/>
+      <stop offset="45%" stop-color="#ffd54a"/>
+      <stop offset="100%" stop-color="#a67c00"/>
     </linearGradient>
   </defs>
-  <rect width="1120" height="280" fill="url(#bg)"/>
-  <g opacity="0.35" font-family="ui-monospace,monospace" font-size="14" fill="#c9a227">
-    <text x="24" y="36">▓▒░█▓▒░█▓▒░█▓▒░█▓▒░█▓▒░█▓▒░█▓▒░█▓▒░█▓▒░█▓▒░█▓▒░█</text>
-    <text x="24" y="250">▓▒░█▓▒░█▓▒░█▓▒░█▓▒░█▓▒░█▓▒░█▓▒░█▓▒░█▓▒░█▓▒░█▓▒░█</text>
+  <rect width="1280" height="320" fill="url(#g)"/>
+  <path d="M0 48 H1280" stroke="#2a2418" stroke-width="1"/>
+  <path d="M0 272 H1280" stroke="#2a2418" stroke-width="1"/>
+  <text x="64" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#6b6250" letter-spacing="3">POLYglot · DETERMINISTIC · MIT</text>
+  <text x="64" y="150" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="52" font-weight="700" fill="url(#y)" letter-spacing="2">BLACK-PIRATE-DHH</text>
+  <text x="64" y="190" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#d8d2c4">FOXFIRE core — nine-language mixer runtime</text>
+  <text x="64" y="230" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#7a7264">fixed paths · append-only growth · branch → PR → merge</text>
+  <g transform="translate(1080,70)">
+    <rect x="0" y="0" width="120" height="36" rx="4" fill="#1a160f" stroke="#ffd54a" stroke-width="1"/>
+    <circle cx="22" cy="18" r="5" fill="#ffd54a">
+      <animate attributeName="opacity" values="1;0.25;1" dur="1.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="38" y="23" font-family="ui-monospace,monospace" font-size="13" fill="#ffd54a">LIVE</text>
   </g>
-  <text x="56" y="120" font-family="ui-monospace,monospace" font-size="42" font-weight="700" fill="url(#gold)">BLACK-PIRATE-DHH</text>
-  <text x="56" y="160" font-family="ui-monospace,monospace" font-size="18" fill="#e8e8e8">&gt;&gt;  FOXFIRE polyglot mixer core  ·  LIVE</text>
-  <text x="56" y="200" font-family="ui-monospace,monospace" font-size="14" fill="#888">9 languages  ·  deterministic kernels  ·  zero throwaway noise</text>
-  <circle cx="1040" cy="60" r="8" fill="#ffe566">
-    <animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/>
-  </circle>
-  <text x="980" y="66" font-family="ui-monospace,monospace" font-size="14" fill="#ffe566">ONLINE</text>
 </svg>

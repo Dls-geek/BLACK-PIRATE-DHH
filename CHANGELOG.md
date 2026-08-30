@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.1 — 2026-08-30
+
+- README refined: production tone, language matrix, design contract, ops table
+- Banner/demo SVGs tightened
+
+
 ## 0.3.0 — 2026-08-30
 
 - Expanded README: badges, demo, architecture, multi-lang samples

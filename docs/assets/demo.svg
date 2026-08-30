@@ -1,16 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
-  <rect width="900" height="360" rx="8" fill="#0d1117" stroke="#30363d"/>
-  <circle cx="28" cy="28" r="7" fill="#ff5f56"/><circle cx="52" cy="28" r="7" fill="#ffbd2e"/><circle cx="76" cy="28" r="7" fill="#27c93f"/>
-  <text x="110" y="33" fill="#8b949e" font-family="ui-monospace,monospace" font-size="13">foxfire — inject session</text>
-  <g font-family="ui-monospace,monospace" font-size="14" fill="#c9d1d9">
-    <text x="24" y="80"><tspan fill="#58a6ff">$</tspan> ./foxfire inject --lang rust --slot am</text>
-    <text x="24" y="110" fill="#8b949e">[#] pulling origin/main …</text>
-    <text x="24" y="140" fill="#8b949e">[#] branch feat/spark-0830</text>
-    <text x="24" y="170"><tspan fill="#3fb950">+</tspan> src/rust/foxfire.rs  ·  harbor_mixer_7a2c</text>
-    <text x="24" y="200"><tspan fill="#3fb950">+</tspan> src/python/foxfire.py ·  tide_reduce_91ef</text>
-    <text x="24" y="230" fill="#8b949e">[#] open PR → merge → cleanup</text>
-    <text x="24" y="270" fill="#ffe566">&gt;&gt; INJECT OK  ·  2 mixers  ·  graph painted</text>
-    <text x="24" y="310" fill="#58a6ff">$</tspan><tspan fill="#c9d1d9"> <tspan id="c">_</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="400" viewBox="0 0 960 400" role="img" aria-label="inject demo">
+  <rect width="960" height="400" rx="10" fill="#0d1117" stroke="#30363d"/>
+  <rect width="960" height="44" rx="10" fill="#161b22"/>
+  <rect y="34" width="960" height="10" fill="#161b22"/>
+  <circle cx="28" cy="22" r="6" fill="#ff5f56"/><circle cx="50" cy="22" r="6" fill="#ffbd2e"/><circle cx="72" cy="22" r="6" fill="#27c93f"/>
+  <text x="100" y="27" fill="#8b949e" font-family="ui-monospace,monospace" font-size="13">bpd@node-01 ~/BLACK-PIRATE-DHH</text>
+  <g font-family="ui-monospace,monospace" font-size="14">
+    <text x="28" y="78" fill="#8b949e"># morning inject · Dhaka +06</text>
+    <text x="28" y="110"><tspan fill="#79c0ff">$</tspan><tspan fill="#c9d1d9"> make inject SLOT=am</tspan></text>
+    <text x="28" y="142" fill="#8b949e">sync  origin/main                 ok</text>
+    <text x="28" y="170" fill="#8b949e">branch feat/spark-0830            created</text>
+    <text x="28" y="198"><tspan fill="#3fb950">diff</tspan><tspan fill="#c9d1d9">  src/rust/foxfire.rs      +18  harbor_kernel</tspan></text>
+    <text x="28" y="226"><tspan fill="#3fb950">diff</tspan><tspan fill="#c9d1d9">  src/python/foxfire.py    +12  tide_reduce</tspan></text>
+    <text x="28" y="254" fill="#8b949e">pr     #14  mergeable               true</text>
+    <text x="28" y="282" fill="#8b949e">merge  squash=false                 ok</text>
+    <text x="28" y="318" fill="#ffd54a">INJECT complete · 2 mixers · graph updated</text>
+    <text x="28" y="360"><tspan fill="#79c0ff">$</tspan><tspan fill="#c9d1d9"> </tspan><tspan fill="#c9d1d9" id="cur">█</tspan></text>
   </g>
-  <animate href="#c" attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  <animate href="#cur" attributeName="opacity" values="1;0;1" dur="1.05s" repeatCount="indefinite"/>
 </svg>
