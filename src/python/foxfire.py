@@ -8,5 +8,10 @@ def foxfire_core(n: int) -> list[int]:
 # --- mixers ---
 
 
+def silent_squid_266ece(n: int) -> list[int]:
+    """silent squid mixer."""
+    return [(i * 35) % 769 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
