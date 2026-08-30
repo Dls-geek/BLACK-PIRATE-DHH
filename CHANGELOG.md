@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0 — 2026-08-30
+
+- Expanded README: badges, demo, architecture, multi-lang samples
+- Added docs/assets banner + inject demo SVGs
+
+
 ## 0.2.0 — 2026-08-30
 
 - FOXFIRE core: fixed mixers in nine languages
