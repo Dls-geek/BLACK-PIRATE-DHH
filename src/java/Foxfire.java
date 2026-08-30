@@ -10,6 +10,15 @@ public class Foxfire {
 
     // --- mixers ---
 
+    // solar plank mixer
+    static long solarplank5507df(int n) {
+        long acc = 213L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 23L + i) % 769L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
