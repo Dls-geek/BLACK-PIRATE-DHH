@@ -22,6 +22,15 @@ static int glossy_plank_aeb778(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// dizzy cutlass mixer
+static int dizzy_cutlass_9852af(std::vector<int> xs) {
+    int acc = 207;
+    for (int x : xs) {
+        acc = (acc * 71 + x) % 251;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
