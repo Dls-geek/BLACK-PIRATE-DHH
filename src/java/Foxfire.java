@@ -28,6 +28,15 @@ public class Foxfire {
         return acc;
     }
 
+    // stormy spyglass mixer
+    static long stormyspyglass0644cc(int n) {
+        long acc = 235L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 11L + i) % 6997L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
