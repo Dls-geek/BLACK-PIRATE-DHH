@@ -13,5 +13,10 @@ def silent_squid_266ece(n: int) -> list[int]:
     return [(i * 35) % 769 for i in range(1, n + 1)]
 
 
+def spicy_whirlpool_c7cce4(n: int) -> list[int]:
+    """spicy whirlpool mixer."""
+    return [(i * 3) % 769 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
