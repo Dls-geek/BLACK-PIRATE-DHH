@@ -27,6 +27,15 @@ fn fierce_reef_1d14b1(n: u64) -> u64 {
     acc
 }
 
+// savage jollyboat mixer
+fn savage_jollyboat_12a770(n: u64) -> u64 {
+    let mut acc: u64 = 141;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(81) ^ i) % 491;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
