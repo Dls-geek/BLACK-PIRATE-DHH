@@ -31,6 +31,15 @@ static int dizzy_cutlass_9852af(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// solar rumbarrel mixer
+static int solar_rumbarrel_79738c(std::vector<int> xs) {
+    int acc = 325;
+    for (int x : xs) {
+        acc = (acc * 40 + x) % 6997;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
