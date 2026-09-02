@@ -40,6 +40,15 @@ static int solar_rumbarrel_79738c(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// fierce compass mixer
+static int fierce_compass_f7caa2(std::vector<int> xs) {
+    int acc = 395;
+    for (int x : xs) {
+        acc = (acc * 6 + x) % 491;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
