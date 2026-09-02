@@ -13,6 +13,15 @@ func foxfire_core(n int) int {
 
 // --- mixers ---
 
+// shadowy harbor mixer
+func shadowy_harbor_95947f(n int) int {
+	acc := 83
+	for i := 1; i <= n; i++ {
+		acc = (acc*7 + i) % 251
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
