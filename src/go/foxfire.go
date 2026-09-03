@@ -22,6 +22,15 @@ func shadowy_harbor_95947f(n int) int {
 	return acc
 }
 
+// solar anchor mixer
+func solar_anchor_3feb8c(n int) int {
+	acc := 119
+	for i := 1; i <= n; i++ {
+		acc = (acc*74 + i) % 1543
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
