@@ -58,6 +58,15 @@ static int electric_skull_e3bc5b(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// solar cyclone mixer
+static int solar_cyclone_08ee80(std::vector<int> xs) {
+    int acc = 382;
+    for (int x : xs) {
+        acc = (acc * 10 + x) % 769;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
