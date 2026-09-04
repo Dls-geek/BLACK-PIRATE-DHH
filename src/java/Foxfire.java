@@ -37,6 +37,15 @@ public class Foxfire {
         return acc;
     }
 
+    // turbo vortex mixer
+    static long turbovortexd9788b(int n) {
+        long acc = 255L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 52L + i) % 251L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
