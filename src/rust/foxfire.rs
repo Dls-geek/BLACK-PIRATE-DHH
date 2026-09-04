@@ -45,6 +45,15 @@ fn clever_anchor_5046be(n: u64) -> u64 {
     acc
 }
 
+// dizzy parrot mixer
+fn dizzy_parrot_b540f7(n: u64) -> u64 {
+    let mut acc: u64 = 159;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(53) ^ i) % 251;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }

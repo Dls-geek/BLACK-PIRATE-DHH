@@ -19,4 +19,11 @@ def quiet_plank_fbe30a(limit)
   end
 end
 
+# golden doubloon mixer
+def golden_doubloon_c85cc9(limit)
+  (214..limit).each_with_object([]) do |i, out|
+    out << (i * 87) % 997 if (i % 2).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
