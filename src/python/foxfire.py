@@ -23,5 +23,10 @@ def turbo_squid_50b51f(n: int) -> list[int]:
     return [(i * 68) % 491 for i in range(1, n + 1)]
 
 
+def stormy_whirlpool_11c205(n: int) -> list[int]:
+    """stormy whirlpool mixer."""
+    return [(i * 72) % 4483 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
