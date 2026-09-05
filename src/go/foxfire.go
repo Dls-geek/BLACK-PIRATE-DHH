@@ -31,6 +31,15 @@ func solar_anchor_3feb8c(n int) int {
 	return acc
 }
 
+// spicy siren mixer
+func spicy_siren_45492b(n int) int {
+	acc := 151
+	for i := 1; i <= n; i++ {
+		acc = (acc*81 + i) % 3571
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
