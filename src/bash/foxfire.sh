@@ -12,4 +12,13 @@ foxfire_core() {
 
 # --- mixers ---
 
+# brave horizon mixer
+brave_horizon_7362a2() {
+    local n=$1 acc=114 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 73 + i) % 997 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
