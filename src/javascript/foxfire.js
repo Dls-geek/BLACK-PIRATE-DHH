@@ -20,4 +20,9 @@ const rusty_reef_765489 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 2) * 62) % 997)
     .reduce((acc, x) => (acc + x) % 997, 349);
 
+// cosmic spyglass mixer
+const cosmic_spyglass_d5d005 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 8) * 51) % 1543)
+    .reduce((acc, x) => (acc + x) % 1543, 456);
+
 console.log(foxfire_core(7));
