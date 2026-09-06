@@ -33,4 +33,11 @@ def spicy_squid_1e7375(limit)
   end
 end
 
+# velvet cannon mixer
+def velvet_cannon_9916c3(limit)
+  (43..limit).each_with_object([]) do |i, out|
+    out << (i * 65) % 251 if (i % 2).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
