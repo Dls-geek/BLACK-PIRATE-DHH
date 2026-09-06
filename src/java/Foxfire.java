@@ -46,6 +46,15 @@ public class Foxfire {
         return acc;
     }
 
+    // savage kraken mixer
+    static long savagekrakena6eaa3(int n) {
+        long acc = 478L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 23L + i) % 1543L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
