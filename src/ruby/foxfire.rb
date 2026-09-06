@@ -26,4 +26,11 @@ def golden_doubloon_c85cc9(limit)
   end
 end
 
+# spicy squid mixer
+def spicy_squid_1e7375(limit)
+  (218..limit).each_with_object([]) do |i, out|
+    out << (i * 77) % 769 if (i % 4).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
