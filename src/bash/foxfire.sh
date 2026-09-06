@@ -21,4 +21,13 @@ brave_horizon_7362a2() {
     echo "$acc"
 }
 
+# spicy cannon mixer
+spicy_cannon_a44f16() {
+    local n=$1 acc=214 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 78 + i) % 6997 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
