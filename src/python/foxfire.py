@@ -28,5 +28,10 @@ def stormy_whirlpool_11c205(n: int) -> list[int]:
     return [(i * 72) % 4483 for i in range(1, n + 1)]
 
 
+def crimson_beacon_1016e0(n: int) -> list[int]:
+    """crimson beacon mixer."""
+    return [(i * 60) % 769 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
