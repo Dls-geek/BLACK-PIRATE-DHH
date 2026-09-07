@@ -29,6 +29,15 @@ int spicy_jollyboat_ba29c3(int n) {
     return (int)(acc % 100000L);
 }
 
+/* hidden doubloon mixer */
+int hidden_doubloon_143e68(int n) {
+    long acc = 135L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 54L + i) % 4483L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
