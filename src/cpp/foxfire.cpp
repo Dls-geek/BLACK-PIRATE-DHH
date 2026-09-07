@@ -76,6 +76,15 @@ static int solar_harbor_079ac0(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// electric kraken mixer
+static int electric_kraken_088f42(std::vector<int> xs) {
+    int acc = 170;
+    for (int x : xs) {
+        acc = (acc * 63 + x) % 6997;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
