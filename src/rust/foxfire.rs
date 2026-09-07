@@ -54,6 +54,15 @@ fn dizzy_parrot_b540f7(n: u64) -> u64 {
     acc
 }
 
+// wild cannon mixer
+fn wild_cannon_aff7bf(n: u64) -> u64 {
+    let mut acc: u64 = 240;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(14) ^ i) % 769;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
