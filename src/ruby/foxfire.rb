@@ -40,4 +40,11 @@ def velvet_cannon_9916c3(limit)
   end
 end
 
+# cosmic treasure mixer
+def cosmic_treasure_b732eb(limit)
+  (416..limit).each_with_object([]) do |i, out|
+    out << (i * 95) % 6997 if (i % 2).zero?
+  end
+end
+
 puts foxfire_core(7).inspect

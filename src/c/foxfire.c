@@ -38,6 +38,15 @@ int hidden_doubloon_143e68(int n) {
     return (int)(acc % 100000L);
 }
 
+/* shadowy jollyboat mixer */
+int shadowy_jollyboat_934a5e(int n) {
+    long acc = 245L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 53L + i) % 1543L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
