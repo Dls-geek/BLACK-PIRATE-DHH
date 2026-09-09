@@ -55,6 +55,15 @@ public class Foxfire {
         return acc;
     }
 
+    // jade harbor mixer
+    static long jadeharbor70f409(int n) {
+        long acc = 247L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 76L + i) % 251L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }

@@ -25,4 +25,14 @@ const cosmic_spyglass_d5d005 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 8) * 51) % 1543)
     .reduce((acc, x) => (acc + x) % 1543, 456);
 
+// turbo plank mixer
+const turbo_plank_040485 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 6) * 30) % 3571)
+    .reduce((acc, x) => (acc + x) % 3571, 15);
+
+// cosmic horizon mixer
+const cosmic_horizon_72ec07 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 4) * 55) % 2617)
+    .reduce((acc, x) => (acc + x) % 2617, 302);
+
 console.log(foxfire_core(7));
