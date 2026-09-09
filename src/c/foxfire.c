@@ -47,6 +47,15 @@ int shadowy_jollyboat_934a5e(int n) {
     return (int)(acc % 100000L);
 }
 
+/* quiet starfish mixer */
+int quiet_starfish_cb501b(int n) {
+    long acc = 277L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 85L + i) % 769L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
