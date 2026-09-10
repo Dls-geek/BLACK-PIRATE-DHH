@@ -85,6 +85,15 @@ static int electric_kraken_088f42(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// golden siren mixer
+static int golden_siren_f97d2c(std::vector<int> xs) {
+    int acc = 448;
+    for (int x : xs) {
+        acc = (acc * 93 + x) % 4483;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
