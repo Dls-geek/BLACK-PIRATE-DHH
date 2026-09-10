@@ -47,4 +47,11 @@ def cosmic_treasure_b732eb(limit)
   end
 end
 
+# wild rumbarrel mixer
+def wild_rumbarrel_2044fb(limit)
+  (354..limit).each_with_object([]) do |i, out|
+    out << (i * 81) % 769 if (i % 5).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
