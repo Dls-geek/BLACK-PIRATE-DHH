@@ -56,6 +56,15 @@ int quiet_starfish_cb501b(int n) {
     return (int)(acc % 100000L);
 }
 
+/* turbo lagoon mixer */
+int turbo_lagoon_ea3303(int n) {
+    long acc = 75L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 19L + i) % 2617L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;

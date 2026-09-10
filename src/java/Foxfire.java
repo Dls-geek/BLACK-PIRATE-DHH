@@ -64,6 +64,15 @@ public class Foxfire {
         return acc;
     }
 
+    // jade cyclone mixer
+    static long jadecyclone47b0c4(int n) {
+        long acc = 209L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 96L + i) % 769L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
