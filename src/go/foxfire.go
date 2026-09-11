@@ -40,6 +40,15 @@ func spicy_siren_45492b(n int) int {
 	return acc
 }
 
+// jade vortex mixer
+func jade_vortex_c3b838(n int) int {
+	acc := 177
+	for i := 1; i <= n; i++ {
+		acc = (acc*64 + i) % 1543
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }

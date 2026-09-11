@@ -73,6 +73,24 @@ public class Foxfire {
         return acc;
     }
 
+    // misty parrot mixer
+    static long mistyparrot1ae485(int n) {
+        long acc = 244L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 43L + i) % 4483L;
+        }
+        return acc;
+    }
+
+    // silent beacon mixer
+    static long silentbeaconb9b21d(int n) {
+        long acc = 141L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 27L + i) % 3571L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
