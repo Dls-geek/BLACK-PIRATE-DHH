@@ -30,4 +30,13 @@ spicy_cannon_a44f16() {
     echo "$acc"
 }
 
+# electric reef mixer
+electric_reef_d2c40b() {
+    local n=$1 acc=421 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 25 + i) % 2617 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7

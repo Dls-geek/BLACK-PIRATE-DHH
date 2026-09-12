@@ -65,6 +65,15 @@ int turbo_lagoon_ea3303(int n) {
     return (int)(acc % 100000L);
 }
 
+/* cosmic cyclone mixer */
+int cosmic_cyclone_e66a5f(int n) {
+    long acc = 235L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 25L + i) % 251L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
