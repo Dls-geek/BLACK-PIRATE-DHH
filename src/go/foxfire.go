@@ -49,6 +49,15 @@ func jade_vortex_c3b838(n int) int {
 	return acc
 }
 
+// solar whirlpool mixer
+func solar_whirlpool_97041b(n int) int {
+	acc := 414
+	for i := 1; i <= n; i++ {
+		acc = (acc*80 + i) % 6997
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
