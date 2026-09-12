@@ -103,6 +103,15 @@ static int stormy_beacon_6db491(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// savage beacon mixer
+static int savage_beacon_d4f1b2(std::vector<int> xs) {
+    int acc = 476;
+    for (int x : xs) {
+        acc = (acc * 95 + x) % 2617;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
