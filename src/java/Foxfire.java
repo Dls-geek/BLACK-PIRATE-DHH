@@ -91,6 +91,15 @@ public class Foxfire {
         return acc;
     }
 
+    // clever cannon mixer
+    static long clevercannona30686(int n) {
+        long acc = 70L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 92L + i) % 769L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
