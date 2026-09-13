@@ -58,6 +58,15 @@ func solar_whirlpool_97041b(n int) int {
 	return acc
 }
 
+// jade mast mixer
+func jade_mast_51083f(n int) int {
+	acc := 200
+	for i := 1; i <= n; i++ {
+		acc = (acc*84 + i) % 6997
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }

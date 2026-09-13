@@ -33,5 +33,10 @@ def crimson_beacon_1016e0(n: int) -> list[int]:
     return [(i * 60) % 769 for i in range(1, n + 1)]
 
 
+def silent_plank_e2aa00(n: int) -> list[int]:
+    """silent plank mixer."""
+    return [(i * 60) % 997 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
