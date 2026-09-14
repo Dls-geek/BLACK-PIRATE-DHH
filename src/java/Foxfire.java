@@ -100,6 +100,15 @@ public class Foxfire {
         return acc;
     }
 
+    // crimson squid mixer
+    static long crimsonsquidefb59a(int n) {
+        long acc = 288L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 34L + i) % 769L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
