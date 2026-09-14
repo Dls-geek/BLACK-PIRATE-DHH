@@ -39,4 +39,13 @@ electric_reef_d2c40b() {
     echo "$acc"
 }
 
+# electric figurehead mixer
+electric_figurehead_573465() {
+    local n=$1 acc=453 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 87 + i) % 769 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
