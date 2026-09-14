@@ -40,4 +40,9 @@ const turbo_mast_56dabf = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 1) * 18) % 769)
     .reduce((acc, x) => (acc + x) % 769, 50);
 
+// salty anchor mixer
+const salty_anchor_fd33fb = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 5) * 37) % 4483)
+    .reduce((acc, x) => (acc + x) % 4483, 177);
+
 console.log(foxfire_core(7));
