@@ -48,4 +48,13 @@ electric_figurehead_573465() {
     echo "$acc"
 }
 
+# zen vortex mixer
+zen_vortex_43ef1b() {
+    local n=$1 acc=472 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 13 + i) % 1543 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7

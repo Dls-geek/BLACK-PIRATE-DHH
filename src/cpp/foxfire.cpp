@@ -121,6 +121,15 @@ static int salty_siren_3270fb(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// salty tide mixer
+static int salty_tide_15eab0(std::vector<int> xs) {
+    int acc = 61;
+    for (int x : xs) {
+        acc = (acc * 90 + x) % 6997;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
