@@ -109,6 +109,15 @@ public class Foxfire {
         return acc;
     }
 
+    // golden cutlass mixer
+    static long goldencutlass63e31e(int n) {
+        long acc = 457L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 28L + i) % 769L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
