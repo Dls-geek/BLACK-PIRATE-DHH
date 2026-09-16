@@ -74,6 +74,15 @@ int cosmic_cyclone_e66a5f(int n) {
     return (int)(acc % 100000L);
 }
 
+/* fierce anchor mixer */
+int fierce_anchor_b663e7(int n) {
+    long acc = 87L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 54L + i) % 6997L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
