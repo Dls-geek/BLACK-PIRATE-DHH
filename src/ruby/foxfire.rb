@@ -54,4 +54,11 @@ def wild_rumbarrel_2044fb(limit)
   end
 end
 
+# shadowy spyglass mixer
+def shadowy_spyglass_0feebe(limit)
+  (61..limit).each_with_object([]) do |i, out|
+    out << (i * 62) % 3571 if (i % 7).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
