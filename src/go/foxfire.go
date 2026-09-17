@@ -76,6 +76,15 @@ func rusty_cyclone_cc5342(n int) int {
 	return acc
 }
 
+// spicy galleon mixer
+func spicy_galleon_9abbd6(n int) int {
+	acc := 373
+	for i := 1; i <= n; i++ {
+		acc = (acc*27 + i) % 997
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
