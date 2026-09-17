@@ -139,6 +139,15 @@ static int clever_siren_07f84a(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// spicy siren mixer
+static int spicy_siren_adcc4d(std::vector<int> xs) {
+    int acc = 89;
+    for (int x : xs) {
+        acc = (acc * 72 + x) % 1543;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
