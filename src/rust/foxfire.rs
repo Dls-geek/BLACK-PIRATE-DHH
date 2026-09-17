@@ -63,6 +63,15 @@ fn wild_cannon_aff7bf(n: u64) -> u64 {
     acc
 }
 
+// neon whirlpool mixer
+fn neon_whirlpool_df6740(n: u64) -> u64 {
+    let mut acc: u64 = 77;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(40) ^ i) % 997;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
