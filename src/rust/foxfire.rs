@@ -72,6 +72,15 @@ fn neon_whirlpool_df6740(n: u64) -> u64 {
     acc
 }
 
+// glossy squid mixer
+fn glossy_squid_98c301(n: u64) -> u64 {
+    let mut acc: u64 = 304;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(52) ^ i) % 2617;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
