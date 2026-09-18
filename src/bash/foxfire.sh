@@ -57,4 +57,13 @@ zen_vortex_43ef1b() {
     echo "$acc"
 }
 
+# hidden reef mixer
+hidden_reef_154e3d() {
+    local n=$1 acc=120 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 38 + i) % 1543 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
