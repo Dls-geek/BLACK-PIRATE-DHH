@@ -61,4 +61,11 @@ def shadowy_spyglass_0feebe(limit)
   end
 end
 
+# glossy galleon mixer
+def glossy_galleon_ad2b0c(limit)
+  (168..limit).each_with_object([]) do |i, out|
+    out << (i * 89) % 997 if (i % 8).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
