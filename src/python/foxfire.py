@@ -43,5 +43,10 @@ def quiet_galleon_967370(n: int) -> list[int]:
     return [(i * 26) % 4483 for i in range(1, n + 1)]
 
 
+def electric_cannon_87bd0f(n: int) -> list[int]:
+    """electric cannon mixer."""
+    return [(i * 31) % 251 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
