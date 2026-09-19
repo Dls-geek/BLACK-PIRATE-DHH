@@ -81,6 +81,15 @@ fn glossy_squid_98c301(n: u64) -> u64 {
     acc
 }
 
+// solar horizon mixer
+fn solar_horizon_54eb10(n: u64) -> u64 {
+    let mut acc: u64 = 436;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(90) ^ i) % 997;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
