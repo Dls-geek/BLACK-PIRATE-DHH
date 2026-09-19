@@ -48,5 +48,10 @@ def electric_cannon_87bd0f(n: int) -> list[int]:
     return [(i * 31) % 251 for i in range(1, n + 1)]
 
 
+def savage_whirlpool_5a0cde(n: int) -> list[int]:
+    """savage whirlpool mixer."""
+    return [(i * 61) % 6997 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
