@@ -82,4 +82,11 @@ def misty_beacon_e268da(limit)
   end
 end
 
+# turbo tide mixer
+def turbo_tide_1909f0(limit)
+  (159..limit).each_with_object([]) do |i, out|
+    out << (i * 73) % 491 if (i % 4).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
