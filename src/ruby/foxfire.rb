@@ -68,4 +68,11 @@ def glossy_galleon_ad2b0c(limit)
   end
 end
 
+# golden kraken mixer
+def golden_kraken_427a29(limit)
+  (16..limit).each_with_object([]) do |i, out|
+    out << (i * 52) % 2617 if (i % 2).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
