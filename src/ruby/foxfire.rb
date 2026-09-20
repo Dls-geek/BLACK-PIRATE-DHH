@@ -75,4 +75,11 @@ def golden_kraken_427a29(limit)
   end
 end
 
+# misty beacon mixer
+def misty_beacon_e268da(limit)
+  (290..limit).each_with_object([]) do |i, out|
+    out << (i * 15) % 2617 if (i % 5).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
