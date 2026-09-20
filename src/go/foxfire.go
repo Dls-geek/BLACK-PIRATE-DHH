@@ -85,6 +85,15 @@ func spicy_galleon_9abbd6(n int) int {
 	return acc
 }
 
+// rusty skull mixer
+func rusty_skull_e0833f(n int) int {
+	acc := 493
+	for i := 1; i <= n; i++ {
+		acc = (acc*28 + i) % 4483
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }

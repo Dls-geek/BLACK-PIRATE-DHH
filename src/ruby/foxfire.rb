@@ -68,4 +68,25 @@ def glossy_galleon_ad2b0c(limit)
   end
 end
 
+# golden kraken mixer
+def golden_kraken_427a29(limit)
+  (16..limit).each_with_object([]) do |i, out|
+    out << (i * 52) % 2617 if (i % 2).zero?
+  end
+end
+
+# misty beacon mixer
+def misty_beacon_e268da(limit)
+  (290..limit).each_with_object([]) do |i, out|
+    out << (i * 15) % 2617 if (i % 5).zero?
+  end
+end
+
+# turbo tide mixer
+def turbo_tide_1909f0(limit)
+  (159..limit).each_with_object([]) do |i, out|
+    out << (i * 73) % 491 if (i % 4).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
