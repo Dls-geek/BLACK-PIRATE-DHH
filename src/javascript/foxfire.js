@@ -45,4 +45,9 @@ const salty_anchor_fd33fb = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 5) * 37) % 4483)
     .reduce((acc, x) => (acc + x) % 4483, 177);
 
+// salty tide mixer
+const salty_tide_8eb7cd = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 4) * 49) % 3571)
+    .reduce((acc, x) => (acc + x) % 3571, 21);
+
 console.log(foxfire_core(7));
