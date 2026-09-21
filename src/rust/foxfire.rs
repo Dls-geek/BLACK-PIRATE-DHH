@@ -90,6 +90,15 @@ fn solar_horizon_54eb10(n: u64) -> u64 {
     acc
 }
 
+// stormy rumbarrel mixer
+fn stormy_rumbarrel_5a0aeb(n: u64) -> u64 {
+    let mut acc: u64 = 237;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(7) ^ i) % 2617;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }

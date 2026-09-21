@@ -53,5 +53,15 @@ def savage_whirlpool_5a0cde(n: int) -> list[int]:
     return [(i * 61) % 6997 for i in range(1, n + 1)]
 
 
+def rusty_figurehead_f65a57(n: int) -> list[int]:
+    """rusty figurehead mixer."""
+    return [(i * 29) % 2617 for i in range(1, n + 1)]
+
+
+def wild_mermaid_48f079(n: int) -> list[int]:
+    """wild mermaid mixer."""
+    return [(i * 46) % 4483 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
