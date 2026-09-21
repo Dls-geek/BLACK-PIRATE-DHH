@@ -118,6 +118,15 @@ public class Foxfire {
         return acc;
     }
 
+    // brave mermaid mixer
+    static long bravemermaida326ca(int n) {
+        long acc = 171L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 33L + i) % 1543L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
