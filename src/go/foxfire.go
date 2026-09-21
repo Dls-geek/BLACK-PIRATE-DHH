@@ -94,6 +94,15 @@ func rusty_skull_e0833f(n int) int {
 	return acc
 }
 
+// crimson vortex mixer
+func crimson_vortex_c12876(n int) int {
+	acc := 52
+	for i := 1; i <= n; i++ {
+		acc = (acc*37 + i) % 491
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
