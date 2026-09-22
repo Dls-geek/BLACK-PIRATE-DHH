@@ -127,6 +127,15 @@ public class Foxfire {
         return acc;
     }
 
+    // solar cannon mixer
+    static long solarcannon1a0b63(int n) {
+        long acc = 396L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 82L + i) % 997L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
