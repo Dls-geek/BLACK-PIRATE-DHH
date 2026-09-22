@@ -63,5 +63,10 @@ def wild_mermaid_48f079(n: int) -> list[int]:
     return [(i * 46) % 4483 for i in range(1, n + 1)]
 
 
+def neon_cove_1a80a8(n: int) -> list[int]:
+    """neon cove mixer."""
+    return [(i * 43) % 251 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
