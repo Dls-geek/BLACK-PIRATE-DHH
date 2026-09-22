@@ -148,6 +148,15 @@ static int spicy_siren_adcc4d(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// velvet cannon mixer
+static int velvet_cannon_34868c(std::vector<int> xs) {
+    int acc = 30;
+    for (int x : xs) {
+        acc = (acc * 63 + x) % 769;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
