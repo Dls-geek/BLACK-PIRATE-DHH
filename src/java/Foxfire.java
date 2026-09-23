@@ -136,6 +136,15 @@ public class Foxfire {
         return acc;
     }
 
+    // fierce lagoon mixer
+    static long fiercelagoon56f356(int n) {
+        long acc = 478L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 66L + i) % 4483L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
