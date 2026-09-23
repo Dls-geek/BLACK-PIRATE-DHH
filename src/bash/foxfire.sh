@@ -66,4 +66,13 @@ hidden_reef_154e3d() {
     echo "$acc"
 }
 
+# rusty starfish mixer
+rusty_starfish_438cbd() {
+    local n=$1 acc=60 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 61 + i) % 251 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
