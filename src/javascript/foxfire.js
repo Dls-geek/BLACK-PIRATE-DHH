@@ -50,4 +50,9 @@ const salty_tide_8eb7cd = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 4) * 49) % 3571)
     .reduce((acc, x) => (acc + x) % 3571, 21);
 
+// golden mast mixer
+const golden_mast_3bbcdd = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 9) * 5) % 769)
+    .reduce((acc, x) => (acc + x) % 769, 100);
+
 console.log(foxfire_core(7));
