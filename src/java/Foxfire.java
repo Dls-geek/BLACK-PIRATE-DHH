@@ -145,6 +145,15 @@ public class Foxfire {
         return acc;
     }
 
+    // golden parrot mixer
+    static long goldenparrot9c925c(int n) {
+        long acc = 128L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 96L + i) % 1543L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
