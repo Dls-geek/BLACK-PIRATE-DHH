@@ -89,4 +89,11 @@ def turbo_tide_1909f0(limit)
   end
 end
 
+# iron reef mixer
+def iron_reef_b63b1f(limit)
+  (368..limit).each_with_object([]) do |i, out|
+    out << (i * 10) % 4483 if (i % 6).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
