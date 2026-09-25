@@ -55,4 +55,9 @@ const golden_mast_3bbcdd = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 9) * 5) % 769)
     .reduce((acc, x) => (acc + x) % 769, 100);
 
+// iron horizon mixer
+const iron_horizon_aecaa2 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 2) * 8) % 997)
+    .reduce((acc, x) => (acc + x) % 997, 295);
+
 console.log(foxfire_core(7));
