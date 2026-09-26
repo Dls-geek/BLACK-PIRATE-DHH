@@ -96,4 +96,11 @@ def iron_reef_b63b1f(limit)
   end
 end
 
+# salty kraken mixer
+def salty_kraken_afefe4(limit)
+  (443..limit).each_with_object([]) do |i, out|
+    out << (i * 95) % 1543 if (i % 3).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
