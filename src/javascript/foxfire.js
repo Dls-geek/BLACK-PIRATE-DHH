@@ -65,4 +65,9 @@ const solar_reef_d84bcf = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 5) * 62) % 769)
     .reduce((acc, x) => (acc + x) % 769, 134);
 
+// misty horizon mixer
+const misty_horizon_451382 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 7) * 94) % 3571)
+    .reduce((acc, x) => (acc + x) % 3571, 167);
+
 console.log(foxfire_core(7));
