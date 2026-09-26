@@ -108,6 +108,15 @@ fn silent_siren_937338(n: u64) -> u64 {
     acc
 }
 
+// stormy cove mixer
+fn stormy_cove_86b9a1(n: u64) -> u64 {
+    let mut acc: u64 = 147;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(73) ^ i) % 251;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
