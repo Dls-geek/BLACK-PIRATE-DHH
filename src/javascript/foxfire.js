@@ -60,4 +60,14 @@ const iron_horizon_aecaa2 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 2) * 8) % 997)
     .reduce((acc, x) => (acc + x) % 997, 295);
 
+// solar reef mixer
+const solar_reef_d84bcf = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 5) * 62) % 769)
+    .reduce((acc, x) => (acc + x) % 769, 134);
+
+// misty horizon mixer
+const misty_horizon_451382 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 7) * 94) % 3571)
+    .reduce((acc, x) => (acc + x) % 3571, 167);
+
 console.log(foxfire_core(7));
