@@ -75,4 +75,13 @@ rusty_starfish_438cbd() {
     echo "$acc"
 }
 
+# crimson rumbarrel mixer
+crimson_rumbarrel_b2f12e() {
+    local n=$1 acc=183 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 14 + i) % 2617 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
