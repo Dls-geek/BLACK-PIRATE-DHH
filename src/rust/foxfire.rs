@@ -117,6 +117,15 @@ fn stormy_cove_86b9a1(n: u64) -> u64 {
     acc
 }
 
+// ghostly cyclone mixer
+fn ghostly_cyclone_1c92b6(n: u64) -> u64 {
+    let mut acc: u64 = 52;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(3) ^ i) % 769;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
