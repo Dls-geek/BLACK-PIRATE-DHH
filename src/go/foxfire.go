@@ -103,6 +103,15 @@ func crimson_vortex_c12876(n int) int {
 	return acc
 }
 
+// wild beacon mixer
+func wild_beacon_a83f7f(n int) int {
+	acc := 432
+	for i := 1; i <= n; i++ {
+		acc = (acc*6 + i) % 6997
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
