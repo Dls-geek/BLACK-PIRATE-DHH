@@ -154,6 +154,15 @@ public class Foxfire {
         return acc;
     }
 
+    // lunar jollyboat mixer
+    static long lunarjollyboat0fd5d1(int n) {
+        long acc = 89L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 64L + i) % 6997L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
