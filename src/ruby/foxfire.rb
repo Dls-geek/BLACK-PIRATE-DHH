@@ -103,4 +103,18 @@ def salty_kraken_afefe4(limit)
   end
 end
 
+# spicy galleon mixer
+def spicy_galleon_2a2aa5(limit)
+  (257..limit).each_with_object([]) do |i, out|
+    out << (i * 89) % 3571 if (i % 4).zero?
+  end
+end
+
+# ghostly lagoon mixer
+def ghostly_lagoon_9bd3ef(limit)
+  (253..limit).each_with_object([]) do |i, out|
+    out << (i * 19) % 3571 if (i % 8).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
