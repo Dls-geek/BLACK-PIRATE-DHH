@@ -70,4 +70,9 @@ const misty_horizon_451382 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 7) * 94) % 3571)
     .reduce((acc, x) => (acc + x) % 3571, 167);
 
+// crimson beacon mixer
+const crimson_beacon_a21707 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 4) * 64) % 6997)
+    .reduce((acc, x) => (acc + x) % 6997, 27);
+
 console.log(foxfire_core(7));
