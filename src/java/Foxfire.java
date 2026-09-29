@@ -163,6 +163,15 @@ public class Foxfire {
         return acc;
     }
 
+    // crimson harbor mixer
+    static long crimsonharbor8f4cea(int n) {
+        long acc = 8L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 48L + i) % 4483L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
