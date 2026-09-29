@@ -110,4 +110,11 @@ def spicy_galleon_2a2aa5(limit)
   end
 end
 
+# ghostly lagoon mixer
+def ghostly_lagoon_9bd3ef(limit)
+  (253..limit).each_with_object([]) do |i, out|
+    out << (i * 19) % 3571 if (i % 8).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
