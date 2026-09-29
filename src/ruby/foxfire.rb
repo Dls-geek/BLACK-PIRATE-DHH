@@ -103,4 +103,11 @@ def salty_kraken_afefe4(limit)
   end
 end
 
+# spicy galleon mixer
+def spicy_galleon_2a2aa5(limit)
+  (257..limit).each_with_object([]) do |i, out|
+    out << (i * 89) % 3571 if (i % 4).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
