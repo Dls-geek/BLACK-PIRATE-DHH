@@ -126,6 +126,15 @@ fn ghostly_cyclone_1c92b6(n: u64) -> u64 {
     acc
 }
 
+// rusty siren mixer
+fn rusty_siren_322284(n: u64) -> u64 {
+    let mut acc: u64 = 174;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(24) ^ i) % 251;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
