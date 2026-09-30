@@ -112,6 +112,15 @@ func wild_beacon_a83f7f(n int) int {
 	return acc
 }
 
+// turbo vortex mixer
+func turbo_vortex_6e0415(n int) int {
+	acc := 497
+	for i := 1; i <= n; i++ {
+		acc = (acc*80 + i) % 769
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
