@@ -93,4 +93,13 @@ clever_mermaid_7dd838() {
     echo "$acc"
 }
 
+# golden whirlpool mixer
+golden_whirlpool_d7e171() {
+    local n=$1 acc=372 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 95 + i) % 6997 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7

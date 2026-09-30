@@ -181,6 +181,15 @@ public class Foxfire {
         return acc;
     }
 
+    // golden rumbarrel mixer
+    static long goldenrumbarreld6c433(int n) {
+        long acc = 93L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 87L + i) % 491L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
