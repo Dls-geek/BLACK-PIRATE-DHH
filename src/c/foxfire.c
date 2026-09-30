@@ -83,6 +83,15 @@ int fierce_anchor_b663e7(int n) {
     return (int)(acc % 100000L);
 }
 
+/* electric harbor mixer */
+int electric_harbor_c61d6e(int n) {
+    long acc = 37L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 61L + i) % 6997L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
