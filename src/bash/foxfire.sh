@@ -84,4 +84,13 @@ crimson_rumbarrel_b2f12e() {
     echo "$acc"
 }
 
+# clever mermaid mixer
+clever_mermaid_7dd838() {
+    local n=$1 acc=171 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 41 + i) % 251 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
