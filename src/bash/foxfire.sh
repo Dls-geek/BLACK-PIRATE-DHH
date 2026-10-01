@@ -102,4 +102,13 @@ golden_whirlpool_d7e171() {
     echo "$acc"
 }
 
+# spicy parrot mixer
+spicy_parrot_8f8751() {
+    local n=$1 acc=138 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 70 + i) % 3571 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
