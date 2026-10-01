@@ -121,6 +121,15 @@ func turbo_vortex_6e0415(n int) int {
 	return acc
 }
 
+// spicy cyclone mixer
+func spicy_cyclone_f23236(n int) int {
+	acc := 401
+	for i := 1; i <= n; i++ {
+		acc = (acc*72 + i) % 6997
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
