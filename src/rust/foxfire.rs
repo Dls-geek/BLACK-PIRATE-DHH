@@ -135,6 +135,24 @@ fn rusty_siren_322284(n: u64) -> u64 {
     acc
 }
 
+// rusty treasure mixer
+fn rusty_treasure_3f6b2b(n: u64) -> u64 {
+    let mut acc: u64 = 384;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(77) ^ i) % 997;
+    }
+    acc
+}
+
+// misty harbor mixer
+fn misty_harbor_8a081e(n: u64) -> u64 {
+    let mut acc: u64 = 270;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(77) ^ i) % 2617;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
