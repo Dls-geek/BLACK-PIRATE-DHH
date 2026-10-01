@@ -190,6 +190,15 @@ public class Foxfire {
         return acc;
     }
 
+    // velvet galleon mixer
+    static long velvetgalleon0ceccc(int n) {
+        long acc = 182L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 26L + i) % 491L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
