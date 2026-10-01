@@ -117,4 +117,11 @@ def ghostly_lagoon_9bd3ef(limit)
   end
 end
 
+# ghostly mermaid mixer
+def ghostly_mermaid_c4c83f(limit)
+  (51..limit).each_with_object([]) do |i, out|
+    out << (i * 75) % 1543 if (i % 5).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
