@@ -102,4 +102,13 @@ golden_whirlpool_d7e171() {
     echo "$acc"
 }
 
+# solar horizon mixer
+solar_horizon_9b811e() {
+    local n=$1 acc=219 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 85 + i) % 997 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
