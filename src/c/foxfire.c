@@ -92,6 +92,15 @@ int electric_harbor_c61d6e(int n) {
     return (int)(acc % 100000L);
 }
 
+/* stormy jollyboat mixer */
+int stormy_jollyboat_389ae6(int n) {
+    long acc = 405L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 70L + i) % 3571L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
