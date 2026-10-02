@@ -111,4 +111,22 @@ solar_horizon_9b811e() {
     echo "$acc"
 }
 
+# velvet compass mixer
+velvet_compass_36cf24() {
+    local n=$1 acc=122 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 60 + i) % 3571 ))
+    done
+    echo "$acc"
+}
+
+# crimson skull mixer
+crimson_skull_43288a() {
+    local n=$1 acc=2 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 50 + i) % 1543 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
