@@ -80,4 +80,9 @@ const neon_beacon_d3449e = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 4) * 29) % 3571)
     .reduce((acc, x) => (acc + x) % 3571, 277);
 
+// solar squid mixer
+const solar_squid_5ea0ad = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 1) * 40) % 491)
+    .reduce((acc, x) => (acc + x) % 491, 20);
+
 console.log(foxfire_core(7));
