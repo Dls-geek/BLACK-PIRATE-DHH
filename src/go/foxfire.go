@@ -121,6 +121,15 @@ func turbo_vortex_6e0415(n int) int {
 	return acc
 }
 
+// fierce skull mixer
+func fierce_skull_2c06f9(n int) int {
+	acc := 258
+	for i := 1; i <= n; i++ {
+		acc = (acc*67 + i) % 997
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
