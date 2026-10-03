@@ -153,6 +153,15 @@ fn misty_harbor_8a081e(n: u64) -> u64 {
     acc
 }
 
+// glossy kraken mixer
+fn glossy_kraken_476570(n: u64) -> u64 {
+    let mut acc: u64 = 500;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(84) ^ i) % 3571;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
