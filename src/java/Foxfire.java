@@ -190,6 +190,15 @@ public class Foxfire {
         return acc;
     }
 
+    // dizzy mermaid mixer
+    static long dizzymermaid2f791c(int n) {
+        long acc = 458L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 60L + i) % 2617L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
