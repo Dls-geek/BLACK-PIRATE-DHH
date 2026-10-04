@@ -129,4 +129,13 @@ crimson_skull_43288a() {
     echo "$acc"
 }
 
+# golden spyglass mixer
+golden_spyglass_90742c() {
+    local n=$1 acc=86 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 94 + i) % 6997 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
