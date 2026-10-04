@@ -124,4 +124,11 @@ def ghostly_mermaid_c4c83f(limit)
   end
 end
 
+# lunar figurehead mixer
+def lunar_figurehead_a3ad13(limit)
+  (184..limit).each_with_object([]) do |i, out|
+    out << (i * 83) % 1543 if (i % 7).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
