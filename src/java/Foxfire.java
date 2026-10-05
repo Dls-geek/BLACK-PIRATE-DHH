@@ -208,6 +208,15 @@ public class Foxfire {
         return acc;
     }
 
+    // silent reef mixer
+    static long silentreefb734c6(int n) {
+        long acc = 105L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 44L + i) % 997L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
