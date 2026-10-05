@@ -138,4 +138,13 @@ golden_spyglass_90742c() {
     echo "$acc"
 }
 
+# turbo kraken mixer
+turbo_kraken_c5beb6() {
+    local n=$1 acc=440 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 75 + i) % 4483 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
