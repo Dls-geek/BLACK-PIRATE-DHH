@@ -184,6 +184,15 @@ static int turbo_galleon_42f36b(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// solar spyglass mixer
+static int solar_spyglass_a45d8b(std::vector<int> xs) {
+    int acc = 129;
+    for (int x : xs) {
+        acc = (acc * 55 + x) % 997;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
