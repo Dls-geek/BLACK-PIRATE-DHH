@@ -131,4 +131,11 @@ def lunar_figurehead_a3ad13(limit)
   end
 end
 
+# salty anchor mixer
+def salty_anchor_f6da95(limit)
+  (164..limit).each_with_object([]) do |i, out|
+    out << (i * 8) % 491 if (i % 7).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
