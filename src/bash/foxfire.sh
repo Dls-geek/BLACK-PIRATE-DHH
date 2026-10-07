@@ -147,4 +147,13 @@ turbo_kraken_c5beb6() {
     echo "$acc"
 }
 
+# clever kraken mixer
+clever_kraken_a2676c() {
+    local n=$1 acc=197 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 49 + i) % 6997 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
