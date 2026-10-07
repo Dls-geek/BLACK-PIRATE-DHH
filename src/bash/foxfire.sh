@@ -156,4 +156,13 @@ clever_kraken_a2676c() {
     echo "$acc"
 }
 
+# quiet anchor mixer
+quiet_anchor_c2ca25() {
+    local n=$1 acc=381 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 22 + i) % 6997 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
