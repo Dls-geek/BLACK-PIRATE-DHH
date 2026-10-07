@@ -217,6 +217,15 @@ public class Foxfire {
         return acc;
     }
 
+    // hidden jollyboat mixer
+    static long hiddenjollyboatc41ab0(int n) {
+        long acc = 298L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 84L + i) % 6997L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
