@@ -162,6 +162,15 @@ fn glossy_kraken_476570(n: u64) -> u64 {
     acc
 }
 
+// dizzy horizon mixer
+fn dizzy_horizon_c8b99b(n: u64) -> u64 {
+    let mut acc: u64 = 219;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(25) ^ i) % 3571;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
