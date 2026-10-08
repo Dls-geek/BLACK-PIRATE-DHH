@@ -226,6 +226,15 @@ public class Foxfire {
         return acc;
     }
 
+    // savage squid mixer
+    static long savagesquid284d4c(int n) {
+        long acc = 269L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 36L + i) % 769L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
