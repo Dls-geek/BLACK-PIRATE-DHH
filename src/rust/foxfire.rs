@@ -171,6 +171,15 @@ fn dizzy_horizon_c8b99b(n: u64) -> u64 {
     acc
 }
 
+// iron whirlpool mixer
+fn iron_whirlpool_93f1ac(n: u64) -> u64 {
+    let mut acc: u64 = 250;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(35) ^ i) % 4483;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
