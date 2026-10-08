@@ -193,6 +193,15 @@ static int solar_spyglass_a45d8b(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// glossy treasure mixer
+static int glossy_treasure_0ef5cd(std::vector<int> xs) {
+    int acc = 451;
+    for (int x : xs) {
+        acc = (acc * 57 + x) % 3571;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
