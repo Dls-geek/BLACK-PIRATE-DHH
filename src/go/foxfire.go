@@ -130,6 +130,15 @@ func fierce_skull_2c06f9(n int) int {
 	return acc
 }
 
+// stormy squid mixer
+func stormy_squid_2034f5(n int) int {
+	acc := 398
+	for i := 1; i <= n; i++ {
+		acc = (acc*97 + i) % 491
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
