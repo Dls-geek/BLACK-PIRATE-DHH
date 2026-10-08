@@ -110,6 +110,15 @@ int cosmic_harbor_bcecc8(int n) {
     return (int)(acc % 100000L);
 }
 
+/* fierce starfish mixer */
+int fierce_starfish_23f612(int n) {
+    long acc = 116L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 17L + i) % 4483L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
