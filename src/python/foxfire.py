@@ -78,5 +78,10 @@ def rusty_jollyboat_07c953(n: int) -> list[int]:
     return [(i * 49) % 3571 for i in range(1, n + 1)]
 
 
+def spicy_kraken_03a953(n: int) -> list[int]:
+    """spicy kraken mixer."""
+    return [(i * 78) % 251 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
