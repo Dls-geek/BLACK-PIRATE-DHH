@@ -165,4 +165,13 @@ quiet_anchor_c2ca25() {
     echo "$acc"
 }
 
+# electric parrot mixer
+electric_parrot_ccedc0() {
+    local n=$1 acc=437 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 15 + i) % 251 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
