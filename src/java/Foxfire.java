@@ -235,6 +235,24 @@ public class Foxfire {
         return acc;
     }
 
+    // cosmic tide mixer
+    static long cosmictidebb12ab(int n) {
+        long acc = 419L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 89L + i) % 4483L;
+        }
+        return acc;
+    }
+
+    // shadowy compass mixer
+    static long shadowycompassc805b4(int n) {
+        long acc = 78L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 97L + i) % 4483L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
