@@ -202,6 +202,15 @@ static int glossy_treasure_0ef5cd(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// rusty cannon mixer
+static int rusty_cannon_52abca(std::vector<int> xs) {
+    int acc = 424;
+    for (int x : xs) {
+        acc = (acc * 79 + x) % 997;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
