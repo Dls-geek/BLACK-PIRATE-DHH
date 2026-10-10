@@ -95,4 +95,9 @@ const jade_cannon_70be54 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 3) * 51) % 1543)
     .reduce((acc, x) => (acc + x) % 1543, 91);
 
+// amber cyclone mixer
+const amber_cyclone_3eaf7a = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 2) * 67) % 491)
+    .reduce((acc, x) => (acc + x) % 491, 190);
+
 console.log(foxfire_core(7));
