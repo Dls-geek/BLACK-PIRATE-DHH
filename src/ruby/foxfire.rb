@@ -138,4 +138,11 @@ def salty_anchor_f6da95(limit)
   end
 end
 
+# zen kraken mixer
+def zen_kraken_609420(limit)
+  (223..limit).each_with_object([]) do |i, out|
+    out << (i * 14) % 251 if (i % 3).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
