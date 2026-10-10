@@ -100,4 +100,9 @@ const amber_cyclone_3eaf7a = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 2) * 67) % 491)
     .reduce((acc, x) => (acc + x) % 491, 190);
 
+// shadowy anchor mixer
+const shadowy_anchor_e20376 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 8) * 14) % 2617)
+    .reduce((acc, x) => (acc + x) % 2617, 227);
+
 console.log(foxfire_core(7));
