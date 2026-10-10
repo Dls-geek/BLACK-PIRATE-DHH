@@ -83,5 +83,15 @@ def spicy_kraken_03a953(n: int) -> list[int]:
     return [(i * 78) % 251 for i in range(1, n + 1)]
 
 
+def shadowy_cove_b7b53e(n: int) -> list[int]:
+    """shadowy cove mixer."""
+    return [(i * 14) % 3571 for i in range(1, n + 1)]
+
+
+def rusty_cyclone_1fcf8c(n: int) -> list[int]:
+    """rusty cyclone mixer."""
+    return [(i * 29) % 6997 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
