@@ -90,4 +90,9 @@ const ghostly_reef_94d0b7 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 2) * 83) % 6997)
     .reduce((acc, x) => (acc + x) % 6997, 288);
 
+// jade cannon mixer
+const jade_cannon_70be54 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 3) * 51) % 1543)
+    .reduce((acc, x) => (acc + x) % 1543, 91);
+
 console.log(foxfire_core(7));
