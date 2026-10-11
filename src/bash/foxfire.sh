@@ -174,4 +174,13 @@ electric_parrot_ccedc0() {
     echo "$acc"
 }
 
+# misty mermaid mixer
+misty_mermaid_c8da23() {
+    local n=$1 acc=333 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 64 + i) % 3571 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
