@@ -183,4 +183,13 @@ misty_mermaid_c8da23() {
     echo "$acc"
 }
 
+# ghostly squid mixer
+ghostly_squid_b5ec11() {
+    local n=$1 acc=250 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 89 + i) % 251 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
