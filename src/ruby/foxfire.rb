@@ -145,4 +145,11 @@ def zen_kraken_609420(limit)
   end
 end
 
+# hidden starfish mixer
+def hidden_starfish_759d2b(limit)
+  (103..limit).each_with_object([]) do |i, out|
+    out << (i * 91) % 491 if (i % 4).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
