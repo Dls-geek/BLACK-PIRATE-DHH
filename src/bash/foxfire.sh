@@ -192,4 +192,13 @@ ghostly_squid_b5ec11() {
     echo "$acc"
 }
 
+# clever rumbarrel mixer
+clever_rumbarrel_70086d() {
+    local n=$1 acc=176 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 84 + i) % 997 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7

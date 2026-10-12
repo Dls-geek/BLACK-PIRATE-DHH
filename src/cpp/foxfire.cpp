@@ -211,6 +211,15 @@ static int rusty_cannon_52abca(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// turbo galleon mixer
+static int turbo_galleon_ab44cb(std::vector<int> xs) {
+    int acc = 94;
+    for (int x : xs) {
+        acc = (acc * 79 + x) % 1543;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;

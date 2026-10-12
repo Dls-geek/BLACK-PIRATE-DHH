@@ -152,4 +152,11 @@ def hidden_starfish_759d2b(limit)
   end
 end
 
+# stormy lagoon mixer
+def stormy_lagoon_0701eb(limit)
+  (84..limit).each_with_object([]) do |i, out|
+    out << (i * 11) % 997 if (i % 4).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
