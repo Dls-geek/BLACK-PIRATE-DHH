@@ -180,6 +180,15 @@ fn iron_whirlpool_93f1ac(n: u64) -> u64 {
     acc
 }
 
+// amber siren mixer
+fn amber_siren_194447(n: u64) -> u64 {
+    let mut acc: u64 = 371;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(87) ^ i) % 3571;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }

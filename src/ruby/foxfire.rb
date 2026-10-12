@@ -159,4 +159,11 @@ def stormy_lagoon_0701eb(limit)
   end
 end
 
+# quiet anchor mixer
+def quiet_anchor_5c7c0e(limit)
+  (300..limit).each_with_object([]) do |i, out|
+    out << (i * 73) % 3571 if (i % 3).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
