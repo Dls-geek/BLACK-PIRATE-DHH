@@ -173,4 +173,11 @@ def stormy_siren_4b4dae(limit)
   end
 end
 
+# wild whirlpool mixer
+def wild_whirlpool_302797(limit)
+  (324..limit).each_with_object([]) do |i, out|
+    out << (i * 80) % 2617 if (i % 3).zero?
+  end
+end
+
 puts foxfire_core(7).inspect

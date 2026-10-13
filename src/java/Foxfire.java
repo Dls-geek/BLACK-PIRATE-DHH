@@ -262,6 +262,15 @@ public class Foxfire {
         return acc;
     }
 
+    // dizzy lagoon mixer
+    static long dizzylagoon65e597(int n) {
+        long acc = 390L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 30L + i) % 3571L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
