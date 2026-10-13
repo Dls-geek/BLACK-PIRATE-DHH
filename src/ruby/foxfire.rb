@@ -166,4 +166,11 @@ def quiet_anchor_5c7c0e(limit)
   end
 end
 
+# stormy siren mixer
+def stormy_siren_4b4dae(limit)
+  (16..limit).each_with_object([]) do |i, out|
+    out << (i * 48) % 491 if (i % 6).zero?
+  end
+end
+
 puts foxfire_core(7).inspect

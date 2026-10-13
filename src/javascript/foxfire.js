@@ -105,4 +105,9 @@ const shadowy_anchor_e20376 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 8) * 14) % 2617)
     .reduce((acc, x) => (acc + x) % 2617, 227);
 
+// rusty horizon mixer
+const rusty_horizon_dc16ca = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 7) * 47) % 769)
+    .reduce((acc, x) => (acc + x) % 769, 70);
+
 console.log(foxfire_core(7));

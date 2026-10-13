@@ -253,6 +253,15 @@ public class Foxfire {
         return acc;
     }
 
+    // velvet horizon mixer
+    static long velvethorizon5a2a1f(int n) {
+        long acc = 50L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 23L + i) % 6997L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
