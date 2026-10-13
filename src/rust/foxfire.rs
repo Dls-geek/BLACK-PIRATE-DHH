@@ -189,6 +189,15 @@ fn amber_siren_194447(n: u64) -> u64 {
     acc
 }
 
+// salty figurehead mixer
+fn salty_figurehead_96d4a0(n: u64) -> u64 {
+    let mut acc: u64 = 378;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(17) ^ i) % 4483;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
