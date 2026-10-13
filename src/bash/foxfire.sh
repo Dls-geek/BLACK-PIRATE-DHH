@@ -201,4 +201,13 @@ clever_rumbarrel_70086d() {
     echo "$acc"
 }
 
+# zen treasure mixer
+zen_treasure_2fc8c6() {
+    local n=$1 acc=471 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 58 + i) % 491 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
