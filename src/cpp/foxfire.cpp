@@ -220,6 +220,15 @@ static int turbo_galleon_ab44cb(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// glossy starfish mixer
+static int glossy_starfish_159770(std::vector<int> xs) {
+    int acc = 321;
+    for (int x : xs) {
+        acc = (acc * 85 + x) % 3571;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
