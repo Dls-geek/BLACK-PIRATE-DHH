@@ -210,4 +210,13 @@ zen_treasure_2fc8c6() {
     echo "$acc"
 }
 
+# fierce jollyboat mixer
+fierce_jollyboat_7f779f() {
+    local n=$1 acc=494 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 21 + i) % 1543 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
