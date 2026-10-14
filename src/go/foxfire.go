@@ -148,6 +148,15 @@ func savage_starfish_ebba63(n int) int {
 	return acc
 }
 
+// turbo kraken mixer
+func turbo_kraken_8d69f9(n int) int {
+	acc := 61
+	for i := 1; i <= n; i++ {
+		acc = (acc*9 + i) % 2617
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }

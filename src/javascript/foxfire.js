@@ -110,4 +110,9 @@ const rusty_horizon_dc16ca = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 7) * 47) % 769)
     .reduce((acc, x) => (acc + x) % 769, 70);
 
+// shadowy beacon mixer
+const shadowy_beacon_31f8e2 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 4) * 14) % 1543)
+    .reduce((acc, x) => (acc + x) % 1543, 343);
+
 console.log(foxfire_core(7));
