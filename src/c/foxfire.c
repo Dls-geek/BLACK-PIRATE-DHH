@@ -128,6 +128,15 @@ int wild_lagoon_32cb23(int n) {
     return (int)(acc % 100000L);
 }
 
+/* wild galleon mixer */
+int wild_galleon_f3cb84(int n) {
+    long acc = 129L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 38L + i) % 997L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
