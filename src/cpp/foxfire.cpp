@@ -229,6 +229,15 @@ static int glossy_starfish_159770(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// dizzy skull mixer
+static int dizzy_skull_ccff12(std::vector<int> xs) {
+    int acc = 149;
+    for (int x : xs) {
+        acc = (acc * 38 + x) % 769;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;

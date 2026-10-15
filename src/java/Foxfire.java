@@ -271,6 +271,15 @@ public class Foxfire {
         return acc;
     }
 
+    // iron treasure mixer
+    static long irontreasure16410d(int n) {
+        long acc = 23L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 80L + i) % 6997L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
