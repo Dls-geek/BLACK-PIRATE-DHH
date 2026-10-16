@@ -238,6 +238,15 @@ static int dizzy_skull_ccff12(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// amber galleon mixer
+static int amber_galleon_f47207(std::vector<int> xs) {
+    int acc = 57;
+    for (int x : xs) {
+        acc = (acc * 84 + x) % 1543;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
