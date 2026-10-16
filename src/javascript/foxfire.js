@@ -115,4 +115,9 @@ const shadowy_beacon_31f8e2 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 4) * 14) % 1543)
     .reduce((acc, x) => (acc + x) % 1543, 343);
 
+// brave anchor mixer
+const brave_anchor_f96894 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 7) * 33) % 2617)
+    .reduce((acc, x) => (acc + x) % 2617, 350);
+
 console.log(foxfire_core(7));
