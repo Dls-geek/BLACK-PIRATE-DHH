@@ -137,6 +137,15 @@ int wild_galleon_f3cb84(int n) {
     return (int)(acc % 100000L);
 }
 
+/* dizzy anchor mixer */
+int dizzy_anchor_56724d(int n) {
+    long acc = 172L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 48L + i) % 491L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
