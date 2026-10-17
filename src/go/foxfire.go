@@ -157,6 +157,15 @@ func turbo_kraken_8d69f9(n int) int {
 	return acc
 }
 
+// salty horizon mixer
+func salty_horizon_2aaef2(n int) int {
+	acc := 460
+	for i := 1; i <= n; i++ {
+		acc = (acc*23 + i) % 997
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
