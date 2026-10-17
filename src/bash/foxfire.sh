@@ -219,4 +219,13 @@ fierce_jollyboat_7f779f() {
     echo "$acc"
 }
 
+# savage treasure mixer
+savage_treasure_db1b03() {
+    local n=$1 acc=80 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 78 + i) % 6997 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7

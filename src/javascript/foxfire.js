@@ -120,4 +120,9 @@ const brave_anchor_f96894 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 7) * 33) % 2617)
     .reduce((acc, x) => (acc + x) % 2617, 350);
 
+// fierce doubloon mixer
+const fierce_doubloon_a895d1 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 4) * 83) % 2617)
+    .reduce((acc, x) => (acc + x) % 2617, 458);
+
 console.log(foxfire_core(7));
