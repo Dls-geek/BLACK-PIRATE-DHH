@@ -108,5 +108,10 @@ def velvet_mast_c8ce4e(n: int) -> list[int]:
     return [(i * 90) % 1543 for i in range(1, n + 1)]
 
 
+def cosmic_vortex_caedbd(n: int) -> list[int]:
+    """cosmic vortex mixer."""
+    return [(i * 88) % 769 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
