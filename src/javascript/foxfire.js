@@ -125,4 +125,9 @@ const fierce_doubloon_a895d1 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 4) * 83) % 2617)
     .reduce((acc, x) => (acc + x) % 2617, 458);
 
+// electric rumbarrel mixer
+const electric_rumbarrel_21e71e = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 3) * 17) % 3571)
+    .reduce((acc, x) => (acc + x) % 3571, 401);
+
 console.log(foxfire_core(7));

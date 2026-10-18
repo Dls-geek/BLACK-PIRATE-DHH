@@ -289,6 +289,15 @@ public class Foxfire {
         return acc;
     }
 
+    // misty squid mixer
+    static long mistysquid9798a5(int n) {
+        long acc = 220L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 62L + i) % 491L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }

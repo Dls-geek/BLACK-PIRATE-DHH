@@ -198,6 +198,15 @@ fn salty_figurehead_96d4a0(n: u64) -> u64 {
     acc
 }
 
+// spicy whirlpool mixer
+fn spicy_whirlpool_289880(n: u64) -> u64 {
+    let mut acc: u64 = 220;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(22) ^ i) % 1543;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
