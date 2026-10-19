@@ -180,4 +180,11 @@ def wild_whirlpool_302797(limit)
   end
 end
 
+# crimson starfish mixer
+def crimson_starfish_698c4e(limit)
+  (98..limit).each_with_object([]) do |i, out|
+    out << (i * 24) % 2617 if (i % 6).zero?
+  end
+end
+
 puts foxfire_core(7).inspect

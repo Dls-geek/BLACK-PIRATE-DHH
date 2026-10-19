@@ -123,5 +123,10 @@ def salty_starfish_2524cf(n: int) -> list[int]:
     return [(i * 86) % 1543 for i in range(1, n + 1)]
 
 
+def ghostly_reef_4a0e86(n: int) -> list[int]:
+    """ghostly reef mixer."""
+    return [(i * 93) % 769 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
