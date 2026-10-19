@@ -216,6 +216,15 @@ fn electric_treasure_b920b5(n: u64) -> u64 {
     acc
 }
 
+// salty doubloon mixer
+fn salty_doubloon_f09028(n: u64) -> u64 {
+    let mut acc: u64 = 299;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(7) ^ i) % 4483;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
