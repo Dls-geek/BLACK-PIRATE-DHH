@@ -166,6 +166,15 @@ func salty_horizon_2aaef2(n int) int {
 	return acc
 }
 
+// shadowy spyglass mixer
+func shadowy_spyglass_34a9c9(n int) int {
+	acc := 152
+	for i := 1; i <= n; i++ {
+		acc = (acc*86 + i) % 491
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
