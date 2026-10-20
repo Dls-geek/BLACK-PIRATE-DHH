@@ -130,4 +130,9 @@ const electric_rumbarrel_21e71e = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 3) * 17) % 3571)
     .reduce((acc, x) => (acc + x) % 3571, 401);
 
+// salty siren mixer
+const salty_siren_481464 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 5) * 10) % 769)
+    .reduce((acc, x) => (acc + x) % 769, 363);
+
 console.log(foxfire_core(7));
