@@ -146,6 +146,15 @@ int dizzy_anchor_56724d(int n) {
     return (int)(acc % 100000L);
 }
 
+/* cosmic starfish mixer */
+int cosmic_starfish_6e3235(int n) {
+    long acc = 165L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 3L + i) % 251L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
