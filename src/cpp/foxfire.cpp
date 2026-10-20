@@ -256,6 +256,15 @@ static int hidden_reef_3602dc(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// jade harbor mixer
+static int jade_harbor_5dd494(std::vector<int> xs) {
+    int acc = 448;
+    for (int x : xs) {
+        acc = (acc * 53 + x) % 6997;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
