@@ -247,6 +247,15 @@ static int amber_galleon_f47207(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// hidden reef mixer
+static int hidden_reef_3602dc(std::vector<int> xs) {
+    int acc = 393;
+    for (int x : xs) {
+        acc = (acc * 41 + x) % 4483;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
