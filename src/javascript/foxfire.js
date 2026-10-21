@@ -135,4 +135,9 @@ const salty_siren_481464 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 5) * 10) % 769)
     .reduce((acc, x) => (acc + x) % 769, 363);
 
+// zen parrot mixer
+const zen_parrot_f41706 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 4) * 57) % 769)
+    .reduce((acc, x) => (acc + x) % 769, 13);
+
 console.log(foxfire_core(7));
