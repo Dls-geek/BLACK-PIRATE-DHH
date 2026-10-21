@@ -237,4 +237,13 @@ crimson_vortex_ea3635() {
     echo "$acc"
 }
 
+# turbo mermaid mixer
+turbo_mermaid_2ebd1d() {
+    local n=$1 acc=222 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 21 + i) % 251 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
