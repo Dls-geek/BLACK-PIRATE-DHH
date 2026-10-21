@@ -228,4 +228,13 @@ savage_treasure_db1b03() {
     echo "$acc"
 }
 
+# crimson vortex mixer
+crimson_vortex_ea3635() {
+    local n=$1 acc=105 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 11 + i) % 6997 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
