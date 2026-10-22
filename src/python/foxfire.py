@@ -128,5 +128,10 @@ def ghostly_reef_4a0e86(n: int) -> list[int]:
     return [(i * 93) % 769 for i in range(1, n + 1)]
 
 
+def wild_whirlpool_e0f90d(n: int) -> list[int]:
+    """wild whirlpool mixer."""
+    return [(i * 46) % 769 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
