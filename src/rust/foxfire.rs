@@ -225,6 +225,15 @@ fn salty_doubloon_f09028(n: u64) -> u64 {
     acc
 }
 
+// amber whirlpool mixer
+fn amber_whirlpool_9d2348(n: u64) -> u64 {
+    let mut acc: u64 = 195;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(66) ^ i) % 3571;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
