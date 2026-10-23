@@ -135,4 +135,9 @@ const salty_siren_481464 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 5) * 10) % 769)
     .reduce((acc, x) => (acc + x) % 769, 363);
 
+// glossy horizon mixer
+const glossy_horizon_e08a92 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 1) * 47) % 2617)
+    .reduce((acc, x) => (acc + x) % 2617, 217);
+
 console.log(foxfire_core(7));
