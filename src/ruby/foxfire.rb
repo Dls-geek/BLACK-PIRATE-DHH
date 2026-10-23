@@ -187,4 +187,11 @@ def crimson_starfish_698c4e(limit)
   end
 end
 
+# quiet rumbarrel mixer
+def quiet_rumbarrel_db6a17(limit)
+  (320..limit).each_with_object([]) do |i, out|
+    out << (i * 38) % 491 if (i % 2).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
