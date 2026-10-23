@@ -155,6 +155,15 @@ int cosmic_starfish_6e3235(int n) {
     return (int)(acc % 100000L);
 }
 
+/* ghostly cove mixer */
+int ghostly_cove_c68b61(int n) {
+    long acc = 94L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 47L + i) % 769L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
