@@ -234,6 +234,15 @@ fn amber_whirlpool_9d2348(n: u64) -> u64 {
     acc
 }
 
+// savage spyglass mixer
+fn savage_spyglass_53f09a(n: u64) -> u64 {
+    let mut acc: u64 = 310;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(15) ^ i) % 769;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
