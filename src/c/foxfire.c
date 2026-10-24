@@ -164,6 +164,15 @@ int ghostly_cove_c68b61(int n) {
     return (int)(acc % 100000L);
 }
 
+/* jade rumbarrel mixer */
+int jade_rumbarrel_494ce2(int n) {
+    long acc = 483L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 17L + i) % 6997L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
