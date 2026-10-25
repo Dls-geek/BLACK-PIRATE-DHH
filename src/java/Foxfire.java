@@ -298,6 +298,15 @@ public class Foxfire {
         return acc;
     }
 
+    // zen rumbarrel mixer
+    static long zenrumbarrel102dfc(int n) {
+        long acc = 456L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 60L + i) % 6997L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
