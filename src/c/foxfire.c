@@ -173,6 +173,15 @@ int jade_rumbarrel_494ce2(int n) {
     return (int)(acc % 100000L);
 }
 
+/* clever spyglass mixer */
+int clever_spyglass_098f05(int n) {
+    long acc = 431L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 8L + i) % 2617L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
