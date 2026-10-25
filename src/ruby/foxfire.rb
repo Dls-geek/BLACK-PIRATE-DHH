@@ -201,4 +201,11 @@ def amber_figurehead_6d8f25(limit)
   end
 end
 
+# cosmic vortex mixer
+def cosmic_vortex_4c65b5(limit)
+  (262..limit).each_with_object([]) do |i, out|
+    out << (i * 6) % 3571 if (i % 7).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
