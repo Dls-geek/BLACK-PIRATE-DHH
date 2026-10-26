@@ -184,6 +184,15 @@ func brave_vortex_3016b3(n int) int {
 	return acc
 }
 
+// amber tide mixer
+func amber_tide_89c356(n int) int {
+	acc := 272
+	for i := 1; i <= n; i++ {
+		acc = (acc*59 + i) % 251
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }

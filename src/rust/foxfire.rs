@@ -243,6 +243,15 @@ fn savage_spyglass_53f09a(n: u64) -> u64 {
     acc
 }
 
+// dizzy vortex mixer
+fn dizzy_vortex_90de88(n: u64) -> u64 {
+    let mut acc: u64 = 466;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(32) ^ i) % 251;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
