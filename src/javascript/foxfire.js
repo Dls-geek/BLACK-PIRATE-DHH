@@ -140,4 +140,9 @@ const glossy_horizon_e08a92 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 1) * 47) % 2617)
     .reduce((acc, x) => (acc + x) % 2617, 217);
 
+// brave beacon mixer
+const brave_beacon_cfdc77 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 9) * 51) % 997)
+    .reduce((acc, x) => (acc + x) % 997, 319);
+
 console.log(foxfire_core(7));
