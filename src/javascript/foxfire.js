@@ -150,4 +150,9 @@ const shadowy_doubloon_d75c94 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 8) * 71) % 997)
     .reduce((acc, x) => (acc + x) % 997, 106);
 
+// zen cannon mixer
+const zen_cannon_07ff22 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 1) * 36) % 1543)
+    .reduce((acc, x) => (acc + x) % 1543, 119);
+
 console.log(foxfire_core(7));
