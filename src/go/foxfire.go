@@ -193,6 +193,15 @@ func amber_tide_89c356(n int) int {
 	return acc
 }
 
+// ghostly anchor mixer
+func ghostly_anchor_d0a4fd(n int) int {
+	acc := 317
+	for i := 1; i <= n; i++ {
+		acc = (acc*68 + i) % 997
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
