@@ -145,4 +145,9 @@ const brave_beacon_cfdc77 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 9) * 51) % 997)
     .reduce((acc, x) => (acc + x) % 997, 319);
 
+// shadowy doubloon mixer
+const shadowy_doubloon_d75c94 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 8) * 71) % 997)
+    .reduce((acc, x) => (acc + x) % 997, 106);
+
 console.log(foxfire_core(7));
