@@ -307,6 +307,15 @@ public class Foxfire {
         return acc;
     }
 
+    // stormy cannon mixer
+    static long stormycannon64f470(int n) {
+        long acc = 349L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 66L + i) % 1543L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
