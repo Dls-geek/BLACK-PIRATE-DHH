@@ -208,4 +208,11 @@ def cosmic_vortex_4c65b5(limit)
   end
 end
 
+# dizzy cannon mixer
+def dizzy_cannon_7c4491(limit)
+  (239..limit).each_with_object([]) do |i, out|
+    out << (i * 27) % 3571 if (i % 7).zero?
+  end
+end
+
 puts foxfire_core(7).inspect

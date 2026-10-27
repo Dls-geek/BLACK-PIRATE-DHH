@@ -155,4 +155,14 @@ const zen_cannon_07ff22 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 1) * 36) % 1543)
     .reduce((acc, x) => (acc + x) % 1543, 119);
 
+// spicy cannon mixer
+const spicy_cannon_225863 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 2) * 94) % 1543)
+    .reduce((acc, x) => (acc + x) % 1543, 481);
+
+// solar compass mixer
+const solar_compass_863f7e = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 4) * 19) % 3571)
+    .reduce((acc, x) => (acc + x) % 3571, 319);
+
 console.log(foxfire_core(7));
