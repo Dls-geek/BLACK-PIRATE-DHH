@@ -211,6 +211,15 @@ func rusty_galleon_c26587(n int) int {
 	return acc
 }
 
+// glossy compass mixer
+func glossy_compass_8e785b(n int) int {
+	acc := 227
+	for i := 1; i <= n; i++ {
+		acc = (acc*32 + i) % 1543
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
