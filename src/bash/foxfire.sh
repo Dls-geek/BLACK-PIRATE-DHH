@@ -228,4 +228,13 @@ savage_treasure_db1b03() {
     echo "$acc"
 }
 
+# cosmic whirlpool mixer
+cosmic_whirlpool_d57927() {
+    local n=$1 acc=276 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 46 + i) % 251 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
