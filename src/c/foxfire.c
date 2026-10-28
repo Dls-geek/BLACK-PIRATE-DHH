@@ -182,6 +182,15 @@ int clever_spyglass_098f05(int n) {
     return (int)(acc % 100000L);
 }
 
+/* lunar kraken mixer */
+int lunar_kraken_bc4f9b(int n) {
+    long acc = 107L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 55L + i) % 1543L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
