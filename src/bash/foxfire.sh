@@ -255,4 +255,13 @@ electric_doubloon_e29a99() {
     echo "$acc"
 }
 
+# wild cyclone mixer
+wild_cyclone_e87427() {
+    local n=$1 acc=138 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 9 + i) % 3571 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
