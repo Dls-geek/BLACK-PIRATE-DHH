@@ -143,5 +143,10 @@ def cosmic_rumbarrel_8d6bf9(n: int) -> list[int]:
     return [(i * 95) % 6997 for i in range(1, n + 1)]
 
 
+def stormy_mast_abea10(n: int) -> list[int]:
+    """stormy mast mixer."""
+    return [(i * 14) % 1543 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])

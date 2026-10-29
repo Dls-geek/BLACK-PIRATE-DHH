@@ -246,4 +246,22 @@ misty_plank_1c3dd6() {
     echo "$acc"
 }
 
+# electric doubloon mixer
+electric_doubloon_e29a99() {
+    local n=$1 acc=480 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 65 + i) % 4483 ))
+    done
+    echo "$acc"
+}
+
+# wild cyclone mixer
+wild_cyclone_e87427() {
+    local n=$1 acc=138 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 9 + i) % 3571 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
