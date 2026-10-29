@@ -237,4 +237,13 @@ cosmic_whirlpool_d57927() {
     echo "$acc"
 }
 
+# misty plank mixer
+misty_plank_1c3dd6() {
+    local n=$1 acc=430 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 66 + i) % 2617 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
