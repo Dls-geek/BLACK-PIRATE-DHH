@@ -191,6 +191,15 @@ int lunar_kraken_bc4f9b(int n) {
     return (int)(acc % 100000L);
 }
 
+/* spicy reef mixer */
+int spicy_reef_b745b1(int n) {
+    long acc = 314L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 54L + i) % 491L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
