@@ -316,6 +316,15 @@ public class Foxfire {
         return acc;
     }
 
+    // neon spyglass mixer
+    static long neonspyglass5be404(int n) {
+        long acc = 241L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 49L + i) % 3571L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
