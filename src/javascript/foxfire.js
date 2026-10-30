@@ -165,4 +165,9 @@ const solar_compass_863f7e = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 4) * 19) % 3571)
     .reduce((acc, x) => (acc + x) % 3571, 319);
 
+// savage vortex mixer
+const savage_vortex_ac0649 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 7) * 40) % 491)
+    .reduce((acc, x) => (acc + x) % 491, 480);
+
 console.log(foxfire_core(7));
