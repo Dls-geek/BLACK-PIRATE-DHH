@@ -148,5 +148,10 @@ def stormy_mast_abea10(n: int) -> list[int]:
     return [(i * 14) % 1543 for i in range(1, n + 1)]
 
 
+def stormy_doubloon_87d2f4(n: int) -> list[int]:
+    """stormy doubloon mixer."""
+    return [(i * 11) % 251 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
