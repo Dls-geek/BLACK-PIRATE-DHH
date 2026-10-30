@@ -220,6 +220,15 @@ func glossy_compass_8e785b(n int) int {
 	return acc
 }
 
+// rusty siren mixer
+func rusty_siren_a2c859(n int) int {
+	acc := 496
+	for i := 1; i <= n; i++ {
+		acc = (acc*86 + i) % 769
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
