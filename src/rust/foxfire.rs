@@ -252,6 +252,15 @@ fn dizzy_vortex_90de88(n: u64) -> u64 {
     acc
 }
 
+// fierce treasure mixer
+fn fierce_treasure_2ad80e(n: u64) -> u64 {
+    let mut acc: u64 = 393;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(27) ^ i) % 6997;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
