@@ -283,6 +283,15 @@ static int hidden_spyglass_9218e1(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// electric mermaid mixer
+static int electric_mermaid_33c72a(std::vector<int> xs) {
+    int acc = 105;
+    for (int x : xs) {
+        acc = (acc * 70 + x) % 4483;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
