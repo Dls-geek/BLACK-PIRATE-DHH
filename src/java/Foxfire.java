@@ -325,6 +325,15 @@ public class Foxfire {
         return acc;
     }
 
+    // electric cannon mixer
+    static long electriccannonf846a9(int n) {
+        long acc = 363L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 93L + i) % 769L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
