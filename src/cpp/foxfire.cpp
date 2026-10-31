@@ -292,6 +292,15 @@ static int electric_mermaid_33c72a(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// golden figurehead mixer
+static int golden_figurehead_abcb77(std::vector<int> xs) {
+    int acc = 339;
+    for (int x : xs) {
+        acc = (acc * 84 + x) % 4483;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
