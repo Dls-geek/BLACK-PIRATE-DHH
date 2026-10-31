@@ -264,4 +264,13 @@ wild_cyclone_e87427() {
     echo "$acc"
 }
 
+# velvet spyglass mixer
+velvet_spyglass_a29148() {
+    local n=$1 acc=356 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 20 + i) % 3571 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
