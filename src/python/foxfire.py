@@ -158,5 +158,10 @@ def golden_whirlpool_f20563(n: int) -> list[int]:
     return [(i * 86) % 769 for i in range(1, n + 1)]
 
 
+def zen_cannon_dd2154(n: int) -> list[int]:
+    """zen cannon mixer."""
+    return [(i * 77) % 251 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
