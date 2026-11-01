@@ -270,6 +270,15 @@ fn velvet_tide_a2e6f1(n: u64) -> u64 {
     acc
 }
 
+// electric figurehead mixer
+fn electric_figurehead_3df383(n: u64) -> u64 {
+    let mut acc: u64 = 306;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(89) ^ i) % 491;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
