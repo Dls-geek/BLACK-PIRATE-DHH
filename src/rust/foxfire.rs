@@ -261,6 +261,15 @@ fn fierce_treasure_2ad80e(n: u64) -> u64 {
     acc
 }
 
+// velvet tide mixer
+fn velvet_tide_a2e6f1(n: u64) -> u64 {
+    let mut acc: u64 = 312;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(3) ^ i) % 6997;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }

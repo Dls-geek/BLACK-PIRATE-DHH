@@ -273,4 +273,13 @@ velvet_spyglass_a29148() {
     echo "$acc"
 }
 
+# electric reef mixer
+electric_reef_677f5b() {
+    local n=$1 acc=202 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 17 + i) % 2617 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
