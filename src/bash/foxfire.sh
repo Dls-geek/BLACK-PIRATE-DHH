@@ -282,4 +282,13 @@ electric_reef_677f5b() {
     echo "$acc"
 }
 
+# clever mast mixer
+clever_mast_792d28() {
+    local n=$1 acc=85 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 69 + i) % 4483 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
