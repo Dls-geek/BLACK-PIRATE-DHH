@@ -291,4 +291,13 @@ clever_mast_792d28() {
     echo "$acc"
 }
 
+# brave horizon mixer
+brave_horizon_7c18d4() {
+    local n=$1 acc=274 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 19 + i) % 1543 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
