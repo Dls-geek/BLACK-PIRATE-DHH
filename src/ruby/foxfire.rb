@@ -222,4 +222,18 @@ def dizzy_plank_2ff43c(limit)
   end
 end
 
+# misty doubloon mixer
+def misty_doubloon_07a4ba(limit)
+  (292..limit).each_with_object([]) do |i, out|
+    out << (i * 84) % 2617 if (i % 2).zero?
+  end
+end
+
+# quiet harbor mixer
+def quiet_harbor_45bc8c(limit)
+  (212..limit).each_with_object([]) do |i, out|
+    out << (i * 85) % 1543 if (i % 6).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
