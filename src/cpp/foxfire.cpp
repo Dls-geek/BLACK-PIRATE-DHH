@@ -301,6 +301,15 @@ static int golden_figurehead_abcb77(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// fierce cyclone mixer
+static int fierce_cyclone_8781ba(std::vector<int> xs) {
+    int acc = 336;
+    for (int x : xs) {
+        acc = (acc * 94 + x) % 491;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
