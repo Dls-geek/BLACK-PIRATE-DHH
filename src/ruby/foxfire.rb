@@ -215,4 +215,11 @@ def dizzy_cannon_7c4491(limit)
   end
 end
 
+# dizzy plank mixer
+def dizzy_plank_2ff43c(limit)
+  (231..limit).each_with_object([]) do |i, out|
+    out << (i * 96) % 6997 if (i % 6).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
