@@ -334,6 +334,15 @@ public class Foxfire {
         return acc;
     }
 
+    // fierce galleon mixer
+    static long fiercegalleon6f36a4(int n) {
+        long acc = 225L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 72L + i) % 491L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
