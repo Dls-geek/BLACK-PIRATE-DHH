@@ -229,4 +229,11 @@ def misty_doubloon_07a4ba(limit)
   end
 end
 
+# quiet harbor mixer
+def quiet_harbor_45bc8c(limit)
+  (212..limit).each_with_object([]) do |i, out|
+    out << (i * 85) % 1543 if (i % 6).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
