@@ -229,6 +229,15 @@ func rusty_siren_a2c859(n int) int {
 	return acc
 }
 
+// stormy lagoon mixer
+func stormy_lagoon_325585(n int) int {
+	acc := 181
+	for i := 1; i <= n; i++ {
+		acc = (acc*46 + i) % 4483
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
