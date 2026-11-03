@@ -300,4 +300,13 @@ brave_horizon_7c18d4() {
     echo "$acc"
 }
 
+# solar spyglass mixer
+solar_spyglass_336ed9() {
+    local n=$1 acc=350 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 86 + i) % 491 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
