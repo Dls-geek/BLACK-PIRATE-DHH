@@ -170,4 +170,9 @@ const savage_vortex_ac0649 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 7) * 40) % 491)
     .reduce((acc, x) => (acc + x) % 491, 480);
 
+// quiet siren mixer
+const quiet_siren_4baeeb = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 3) * 18) % 997)
+    .reduce((acc, x) => (acc + x) % 997, 29);
+
 console.log(foxfire_core(7));
