@@ -200,6 +200,24 @@ int spicy_reef_b745b1(int n) {
     return (int)(acc % 100000L);
 }
 
+/* ghostly skull mixer */
+int ghostly_skull_a80c44(int n) {
+    long acc = 363L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 25L + i) % 997L;
+    }
+    return (int)(acc % 100000L);
+}
+
+/* salty figurehead mixer */
+int salty_figurehead_fec414(int n) {
+    long acc = 275L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 65L + i) % 4483L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;

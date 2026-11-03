@@ -175,4 +175,9 @@ const quiet_siren_4baeeb = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 3) * 18) % 997)
     .reduce((acc, x) => (acc + x) % 997, 29);
 
+// ghostly cyclone mixer
+const ghostly_cyclone_9414e5 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 8) * 30) % 4483)
+    .reduce((acc, x) => (acc + x) % 4483, 454);
+
 console.log(foxfire_core(7));
