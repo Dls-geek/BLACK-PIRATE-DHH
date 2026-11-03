@@ -222,4 +222,11 @@ def dizzy_plank_2ff43c(limit)
   end
 end
 
+# misty doubloon mixer
+def misty_doubloon_07a4ba(limit)
+  (292..limit).each_with_object([]) do |i, out|
+    out << (i * 84) % 2617 if (i % 2).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
