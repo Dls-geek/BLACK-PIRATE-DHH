@@ -279,6 +279,15 @@ fn electric_figurehead_3df383(n: u64) -> u64 {
     acc
 }
 
+// silent whirlpool mixer
+fn silent_whirlpool_6f4c73(n: u64) -> u64 {
+    let mut acc: u64 = 197;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(76) ^ i) % 4483;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
