@@ -236,4 +236,11 @@ def quiet_harbor_45bc8c(limit)
   end
 end
 
+# hidden parrot mixer
+def hidden_parrot_f07ff8(limit)
+  (77..limit).each_with_object([]) do |i, out|
+    out << (i * 86) % 6997 if (i % 3).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
