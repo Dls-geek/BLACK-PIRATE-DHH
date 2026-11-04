@@ -238,6 +238,15 @@ func stormy_lagoon_325585(n int) int {
 	return acc
 }
 
+// savage doubloon mixer
+func savage_doubloon_0d152c(n int) int {
+	acc := 99
+	for i := 1; i <= n; i++ {
+		acc = (acc*24 + i) % 997
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
