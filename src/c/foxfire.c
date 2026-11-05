@@ -227,6 +227,15 @@ int shadowy_tide_37f6d1(int n) {
     return (int)(acc % 100000L);
 }
 
+/* jade figurehead mixer */
+int jade_figurehead_908283(int n) {
+    long acc = 453L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 67L + i) % 3571L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
