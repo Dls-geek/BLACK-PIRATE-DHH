@@ -343,6 +343,15 @@ public class Foxfire {
         return acc;
     }
 
+    // rusty horizon mixer
+    static long rustyhorizon73d01e(int n) {
+        long acc = 331L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 76L + i) % 251L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
