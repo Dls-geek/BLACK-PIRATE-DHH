@@ -361,6 +361,15 @@ public class Foxfire {
         return acc;
     }
 
+    // zen beacon mixer
+    static long zenbeacon9a75bc(int n) {
+        long acc = 409L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 71L + i) % 769L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
