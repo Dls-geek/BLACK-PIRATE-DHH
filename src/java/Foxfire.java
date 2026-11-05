@@ -352,6 +352,15 @@ public class Foxfire {
         return acc;
     }
 
+    // quiet siren mixer
+    static long quietsiren515117(int n) {
+        long acc = 53L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 79L + i) % 1543L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
