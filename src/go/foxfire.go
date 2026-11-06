@@ -283,6 +283,15 @@ func ghostly_skull_b94c41(n int) int {
 	return acc
 }
 
+// fierce anchor mixer
+func fierce_anchor_0da2a7(n int) int {
+	acc := 257
+	for i := 1; i <= n; i++ {
+		acc = (acc*73 + i) % 2617
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
