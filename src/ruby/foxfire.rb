@@ -243,4 +243,11 @@ def hidden_parrot_f07ff8(limit)
   end
 end
 
+# iron whirlpool mixer
+def iron_whirlpool_2ece08(limit)
+  (170..limit).each_with_object([]) do |i, out|
+    out << (i * 22) % 997 if (i % 6).zero?
+  end
+end
+
 puts foxfire_core(7).inspect

@@ -173,5 +173,10 @@ def misty_rumbarrel_6520f8(n: int) -> list[int]:
     return [(i * 56) % 2617 for i in range(1, n + 1)]
 
 
+def wild_horizon_bd5362(n: int) -> list[int]:
+    """wild horizon mixer."""
+    return [(i * 44) % 2617 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])

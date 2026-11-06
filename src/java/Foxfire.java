@@ -370,6 +370,15 @@ public class Foxfire {
         return acc;
     }
 
+    // ghostly cove mixer
+    static long ghostlycovedaa09e(int n) {
+        long acc = 50L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 50L + i) % 251L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
