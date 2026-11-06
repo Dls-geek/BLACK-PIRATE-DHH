@@ -288,6 +288,15 @@ fn silent_whirlpool_6f4c73(n: u64) -> u64 {
     acc
 }
 
+// dizzy skull mixer
+fn dizzy_skull_582a22(n: u64) -> u64 {
+    let mut acc: u64 = 121;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(81) ^ i) % 2617;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
