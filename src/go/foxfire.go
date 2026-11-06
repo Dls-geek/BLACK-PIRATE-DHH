@@ -265,6 +265,15 @@ func amber_mast_2f8166(n int) int {
 	return acc
 }
 
+// spicy jollyboat mixer
+func spicy_jollyboat_3b1402(n int) int {
+	acc := 256
+	for i := 1; i <= n; i++ {
+		acc = (acc*96 + i) % 769
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
