@@ -310,6 +310,15 @@ static int fierce_cyclone_8781ba(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// turbo compass mixer
+static int turbo_compass_eef73e(std::vector<int> xs) {
+    int acc = 229;
+    for (int x : xs) {
+        acc = (acc * 45 + x) % 6997;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
