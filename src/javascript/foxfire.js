@@ -180,4 +180,9 @@ const ghostly_cyclone_9414e5 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 8) * 30) % 4483)
     .reduce((acc, x) => (acc + x) % 4483, 454);
 
+// cosmic lagoon mixer
+const cosmic_lagoon_f1e6c5 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 8) * 96) % 997)
+    .reduce((acc, x) => (acc + x) % 997, 255);
+
 console.log(foxfire_core(7));

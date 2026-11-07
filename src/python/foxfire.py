@@ -178,5 +178,10 @@ def wild_horizon_bd5362(n: int) -> list[int]:
     return [(i * 44) % 2617 for i in range(1, n + 1)]
 
 
+def stormy_skull_fd0040(n: int) -> list[int]:
+    """stormy skull mixer."""
+    return [(i * 87) % 769 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
