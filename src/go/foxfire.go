@@ -292,6 +292,15 @@ func fierce_anchor_0da2a7(n int) int {
 	return acc
 }
 
+// amber jollyboat mixer
+func amber_jollyboat_759555(n int) int {
+	acc := 152
+	for i := 1; i <= n; i++ {
+		acc = (acc*89 + i) % 769
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
