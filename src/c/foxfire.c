@@ -236,6 +236,15 @@ int jade_figurehead_908283(int n) {
     return (int)(acc % 100000L);
 }
 
+/* velvet cutlass mixer */
+int velvet_cutlass_d971c2(int n) {
+    long acc = 189L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 50L + i) % 1543L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
