@@ -185,4 +185,9 @@ const cosmic_lagoon_f1e6c5 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 8) * 96) % 997)
     .reduce((acc, x) => (acc + x) % 997, 255);
 
+// shadowy plank mixer
+const shadowy_plank_1edb44 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 6) * 93) % 251)
+    .reduce((acc, x) => (acc + x) % 251, 481);
+
 console.log(foxfire_core(7));
