@@ -301,6 +301,15 @@ func amber_jollyboat_759555(n int) int {
 	return acc
 }
 
+// quiet harbor mixer
+func quiet_harbor_0ac0cf(n int) int {
+	acc := 254
+	for i := 1; i <= n; i++ {
+		acc = (acc*11 + i) % 3571
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
