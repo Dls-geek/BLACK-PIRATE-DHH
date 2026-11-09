@@ -183,5 +183,10 @@ def stormy_skull_fd0040(n: int) -> list[int]:
     return [(i * 87) % 769 for i in range(1, n + 1)]
 
 
+def misty_vortex_844c3a(n: int) -> list[int]:
+    """misty vortex mixer."""
+    return [(i * 87) % 2617 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
