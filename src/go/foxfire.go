@@ -310,6 +310,15 @@ func quiet_harbor_0ac0cf(n int) int {
 	return acc
 }
 
+// salty vortex mixer
+func salty_vortex_4b77d4(n int) int {
+	acc := 376
+	for i := 1; i <= n; i++ {
+		acc = (acc*56 + i) % 4483
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
