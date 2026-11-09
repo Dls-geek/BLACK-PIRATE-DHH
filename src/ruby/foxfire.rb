@@ -250,4 +250,11 @@ def iron_whirlpool_2ece08(limit)
   end
 end
 
+# amber skull mixer
+def amber_skull_e41464(limit)
+  (200..limit).each_with_object([]) do |i, out|
+    out << (i * 25) % 251 if (i % 3).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
