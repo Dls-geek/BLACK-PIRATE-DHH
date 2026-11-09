@@ -309,4 +309,13 @@ solar_spyglass_336ed9() {
     echo "$acc"
 }
 
+# velvet cutlass mixer
+velvet_cutlass_b6886a() {
+    local n=$1 acc=284 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 86 + i) % 997 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7

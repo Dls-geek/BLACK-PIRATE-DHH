@@ -297,6 +297,15 @@ fn dizzy_skull_582a22(n: u64) -> u64 {
     acc
 }
 
+// salty spyglass mixer
+fn salty_spyglass_753103(n: u64) -> u64 {
+    let mut acc: u64 = 317;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(18) ^ i) % 769;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
