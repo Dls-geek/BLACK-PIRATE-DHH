@@ -319,6 +319,15 @@ func salty_vortex_4b77d4(n int) int {
 	return acc
 }
 
+// neon anchor mixer
+func neon_anchor_7979ac(n int) int {
+	acc := 126
+	for i := 1; i <= n; i++ {
+		acc = (acc*41 + i) % 4483
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
