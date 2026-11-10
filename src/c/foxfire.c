@@ -245,6 +245,15 @@ int velvet_cutlass_d971c2(int n) {
     return (int)(acc % 100000L);
 }
 
+/* clever vortex mixer */
+int clever_vortex_3dab7b(int n) {
+    long acc = 196L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 5L + i) % 2617L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
