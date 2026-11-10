@@ -379,6 +379,15 @@ public class Foxfire {
         return acc;
     }
 
+    // lunar parrot mixer
+    static long lunarparrot8af0e6(int n) {
+        long acc = 160L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 87L + i) % 1543L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
