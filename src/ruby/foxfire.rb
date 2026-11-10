@@ -264,4 +264,11 @@ def hidden_anchor_64e333(limit)
   end
 end
 
+# turbo galleon mixer
+def turbo_galleon_a117fa(limit)
+  (204..limit).each_with_object([]) do |i, out|
+    out << (i * 71) % 769 if (i % 9).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
