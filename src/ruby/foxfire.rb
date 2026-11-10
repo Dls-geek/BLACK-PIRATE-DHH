@@ -257,4 +257,11 @@ def amber_skull_e41464(limit)
   end
 end
 
+# hidden anchor mixer
+def hidden_anchor_64e333(limit)
+  (385..limit).each_with_object([]) do |i, out|
+    out << (i * 38) % 1543 if (i % 4).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
