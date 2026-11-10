@@ -318,4 +318,13 @@ velvet_cutlass_b6886a() {
     echo "$acc"
 }
 
+# spicy mast mixer
+spicy_mast_ff9457() {
+    local n=$1 acc=411 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 29 + i) % 1543 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
