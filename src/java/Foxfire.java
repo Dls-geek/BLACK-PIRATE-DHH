@@ -388,6 +388,15 @@ public class Foxfire {
         return acc;
     }
 
+    // velvet mermaid mixer
+    static long velvetmermaidcb81fe(int n) {
+        long acc = 205L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 33L + i) % 1543L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
