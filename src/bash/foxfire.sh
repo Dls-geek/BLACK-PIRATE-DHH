@@ -327,4 +327,13 @@ spicy_mast_ff9457() {
     echo "$acc"
 }
 
+# iron anchor mixer
+iron_anchor_8b244b() {
+    local n=$1 acc=203 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 65 + i) % 997 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
