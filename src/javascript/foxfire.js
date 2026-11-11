@@ -190,4 +190,9 @@ const shadowy_plank_1edb44 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 6) * 93) % 251)
     .reduce((acc, x) => (acc + x) % 251, 481);
 
+// dizzy whirlpool mixer
+const dizzy_whirlpool_8370f8 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 4) * 5) % 769)
+    .reduce((acc, x) => (acc + x) % 769, 266);
+
 console.log(foxfire_core(7));
