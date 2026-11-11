@@ -397,6 +397,15 @@ public class Foxfire {
         return acc;
     }
 
+    // lunar siren mixer
+    static long lunarsirene7f448(int n) {
+        long acc = 156L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 25L + i) % 3571L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
