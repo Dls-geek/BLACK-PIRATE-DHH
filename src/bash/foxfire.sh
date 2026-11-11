@@ -336,4 +336,13 @@ iron_anchor_8b244b() {
     echo "$acc"
 }
 
+# shadowy siren mixer
+shadowy_siren_6f0479() {
+    local n=$1 acc=440 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 93 + i) % 6997 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7

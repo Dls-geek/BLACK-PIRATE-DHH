@@ -272,6 +272,15 @@ int amber_spyglass_cfef69(int n) {
     return (int)(acc % 100000L);
 }
 
+/* shadowy rumbarrel mixer */
+int shadowy_rumbarrel_93595c(int n) {
+    long acc = 353L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 78L + i) % 4483L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
