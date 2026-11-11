@@ -254,6 +254,15 @@ int clever_vortex_3dab7b(int n) {
     return (int)(acc % 100000L);
 }
 
+/* misty parrot mixer */
+int misty_parrot_233dad(int n) {
+    long acc = 56L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 29L + i) % 769L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
