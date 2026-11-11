@@ -263,6 +263,15 @@ int misty_parrot_233dad(int n) {
     return (int)(acc % 100000L);
 }
 
+/* amber spyglass mixer */
+int amber_spyglass_cfef69(int n) {
+    long acc = 178L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 87L + i) % 997L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
