@@ -195,4 +195,9 @@ const dizzy_whirlpool_8370f8 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 4) * 5) % 769)
     .reduce((acc, x) => (acc + x) % 769, 266);
 
+// clever mermaid mixer
+const clever_mermaid_717919 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 1) * 27) % 6997)
+    .reduce((acc, x) => (acc + x) % 6997, 241);
+
 console.log(foxfire_core(7));
