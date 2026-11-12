@@ -281,6 +281,15 @@ int shadowy_rumbarrel_93595c(int n) {
     return (int)(acc % 100000L);
 }
 
+/* savage cutlass mixer */
+int savage_cutlass_c3dcbd(int n) {
+    long acc = 170L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 19L + i) % 997L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
