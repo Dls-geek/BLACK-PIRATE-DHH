@@ -406,6 +406,15 @@ public class Foxfire {
         return acc;
     }
 
+    // zen vortex mixer
+    static long zenvortex296fa3(int n) {
+        long acc = 419L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 20L + i) % 6997L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
