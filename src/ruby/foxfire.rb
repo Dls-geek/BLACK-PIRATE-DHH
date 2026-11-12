@@ -271,4 +271,11 @@ def turbo_galleon_a117fa(limit)
   end
 end
 
+# misty figurehead mixer
+def misty_figurehead_fbefb4(limit)
+  (467..limit).each_with_object([]) do |i, out|
+    out << (i * 9) % 769 if (i % 9).zero?
+  end
+end
+
 puts foxfire_core(7).inspect

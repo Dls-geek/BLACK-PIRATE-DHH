@@ -200,4 +200,9 @@ const clever_mermaid_717919 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 1) * 27) % 6997)
     .reduce((acc, x) => (acc + x) % 6997, 241);
 
+// cosmic cove mixer
+const cosmic_cove_049516 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 6) * 76) % 1543)
+    .reduce((acc, x) => (acc + x) % 1543, 493);
+
 console.log(foxfire_core(7));
