@@ -415,6 +415,15 @@ public class Foxfire {
         return acc;
     }
 
+    // electric parrot mixer
+    static long electricparrote74734(int n) {
+        long acc = 302L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 97L + i) % 3571L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }

@@ -319,6 +319,15 @@ static int turbo_compass_eef73e(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// crimson horizon mixer
+static int crimson_horizon_d33a7b(std::vector<int> xs) {
+    int acc = 462;
+    for (int x : xs) {
+        acc = (acc * 48 + x) % 251;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;

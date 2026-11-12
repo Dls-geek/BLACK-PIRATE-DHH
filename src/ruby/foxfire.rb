@@ -278,4 +278,11 @@ def misty_figurehead_fbefb4(limit)
   end
 end
 
+# shadowy whirlpool mixer
+def shadowy_whirlpool_9b785c(limit)
+  (421..limit).each_with_object([]) do |i, out|
+    out << (i * 83) % 2617 if (i % 2).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
