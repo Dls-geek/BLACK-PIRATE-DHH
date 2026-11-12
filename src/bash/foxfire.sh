@@ -345,4 +345,13 @@ shadowy_siren_6f0479() {
     echo "$acc"
 }
 
+# fierce harbor mixer
+fierce_harbor_052acf() {
+    local n=$1 acc=169 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 14 + i) % 769 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
