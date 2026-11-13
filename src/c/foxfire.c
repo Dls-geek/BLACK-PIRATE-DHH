@@ -290,6 +290,15 @@ int savage_cutlass_c3dcbd(int n) {
     return (int)(acc % 100000L);
 }
 
+/* wild tide mixer */
+int wild_tide_51466e(int n) {
+    long acc = 372L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 73L + i) % 3571L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
