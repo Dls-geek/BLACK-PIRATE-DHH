@@ -299,6 +299,15 @@ int wild_tide_51466e(int n) {
     return (int)(acc % 100000L);
 }
 
+/* neon starfish mixer */
+int neon_starfish_1c7fa4(int n) {
+    long acc = 358L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 12L + i) % 2617L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;

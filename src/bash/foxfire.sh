@@ -354,4 +354,13 @@ fierce_harbor_052acf() {
     echo "$acc"
 }
 
+# misty cove mixer
+misty_cove_e37445() {
+    local n=$1 acc=183 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 19 + i) % 1543 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
