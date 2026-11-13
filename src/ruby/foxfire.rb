@@ -285,4 +285,11 @@ def shadowy_whirlpool_9b785c(limit)
   end
 end
 
+# neon starfish mixer
+def neon_starfish_01b2f9(limit)
+  (246..limit).each_with_object([]) do |i, out|
+    out << (i * 65) % 997 if (i % 5).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
