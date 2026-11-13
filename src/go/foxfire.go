@@ -328,6 +328,15 @@ func neon_anchor_7979ac(n int) int {
 	return acc
 }
 
+// dizzy figurehead mixer
+func dizzy_figurehead_b079bd(n int) int {
+	acc := 305
+	for i := 1; i <= n; i++ {
+		acc = (acc*59 + i) % 3571
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
