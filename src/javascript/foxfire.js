@@ -210,4 +210,9 @@ const turbo_doubloon_8d5595 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 6) * 32) % 1543)
     .reduce((acc, x) => (acc + x) % 1543, 213);
 
+// brave spyglass mixer
+const brave_spyglass_367f88 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 4) * 70) % 2617)
+    .reduce((acc, x) => (acc + x) % 2617, 494);
+
 console.log(foxfire_core(7));
