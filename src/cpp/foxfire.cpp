@@ -355,6 +355,15 @@ static int fierce_cutlass_6a7ed6(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// solar lagoon mixer
+static int solar_lagoon_5aa992(std::vector<int> xs) {
+    int acc = 221;
+    for (int x : xs) {
+        acc = (acc * 53 + x) % 997;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
