@@ -337,6 +337,15 @@ static int stormy_vortex_1ea251(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// glossy mermaid mixer
+static int glossy_mermaid_a302ad(std::vector<int> xs) {
+    int acc = 260;
+    for (int x : xs) {
+        acc = (acc * 16 + x) % 3571;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
