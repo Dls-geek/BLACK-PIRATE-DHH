@@ -355,6 +355,24 @@ func cosmic_parrot_63f620(n int) int {
 	return acc
 }
 
+// velvet horizon mixer
+func velvet_horizon_c7276f(n int) int {
+	acc := 189
+	for i := 1; i <= n; i++ {
+		acc = (acc*28 + i) % 769
+	}
+	return acc
+}
+
+// stormy mast mixer
+func stormy_mast_f230b0(n int) int {
+	acc := 471
+	for i := 1; i <= n; i++ {
+		acc = (acc*95 + i) % 3571
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }

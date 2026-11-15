@@ -372,4 +372,13 @@ misty_figurehead_36ef18() {
     echo "$acc"
 }
 
+# silent spyglass mixer
+silent_spyglass_fbec84() {
+    local n=$1 acc=290 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 88 + i) % 251 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
