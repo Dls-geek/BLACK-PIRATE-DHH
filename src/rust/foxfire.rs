@@ -306,6 +306,15 @@ fn salty_spyglass_753103(n: u64) -> u64 {
     acc
 }
 
+// brave spyglass mixer
+fn brave_spyglass_293112(n: u64) -> u64 {
+    let mut acc: u64 = 442;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(55) ^ i) % 997;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
