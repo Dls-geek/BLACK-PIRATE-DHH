@@ -363,4 +363,13 @@ misty_cove_e37445() {
     echo "$acc"
 }
 
+# misty figurehead mixer
+misty_figurehead_36ef18() {
+    local n=$1 acc=229 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 89 + i) % 6997 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
