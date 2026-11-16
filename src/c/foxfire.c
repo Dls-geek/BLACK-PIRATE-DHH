@@ -308,6 +308,15 @@ int neon_starfish_1c7fa4(int n) {
     return (int)(acc % 100000L);
 }
 
+/* solar compass mixer */
+int solar_compass_31aeb3(int n) {
+    long acc = 460L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 46L + i) % 2617L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;

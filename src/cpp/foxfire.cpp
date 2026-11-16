@@ -373,6 +373,15 @@ static int misty_starfish_412fa6(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// amber rumbarrel mixer
+static int amber_rumbarrel_3aa563(std::vector<int> xs) {
+    int acc = 309;
+    for (int x : xs) {
+        acc = (acc * 80 + x) % 997;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;

@@ -433,6 +433,15 @@ public class Foxfire {
         return acc;
     }
 
+    // solar figurehead mixer
+    static long solarfigurehead62cb93(int n) {
+        long acc = 253L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 21L + i) % 1543L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
