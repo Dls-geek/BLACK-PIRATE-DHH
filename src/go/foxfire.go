@@ -364,6 +364,15 @@ func velvet_horizon_c7276f(n int) int {
 	return acc
 }
 
+// stormy mast mixer
+func stormy_mast_f230b0(n int) int {
+	acc := 471
+	for i := 1; i <= n; i++ {
+		acc = (acc*95 + i) % 3571
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
