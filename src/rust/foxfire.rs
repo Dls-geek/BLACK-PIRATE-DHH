@@ -315,6 +315,15 @@ fn brave_spyglass_293112(n: u64) -> u64 {
     acc
 }
 
+// crimson figurehead mixer
+fn crimson_figurehead_eb71f1(n: u64) -> u64 {
+    let mut acc: u64 = 439;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(80) ^ i) % 2617;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
