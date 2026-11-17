@@ -373,6 +373,15 @@ func stormy_mast_f230b0(n int) int {
 	return acc
 }
 
+// lunar cove mixer
+func lunar_cove_44eb59(n int) int {
+	acc := 362
+	for i := 1; i <= n; i++ {
+		acc = (acc*75 + i) % 997
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
