@@ -292,4 +292,11 @@ def neon_starfish_01b2f9(limit)
   end
 end
 
+# solar doubloon mixer
+def solar_doubloon_baec81(limit)
+  (498..limit).each_with_object([]) do |i, out|
+    out << (i * 66) % 997 if (i % 5).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
