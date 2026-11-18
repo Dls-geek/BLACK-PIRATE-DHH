@@ -208,5 +208,10 @@ def cosmic_spyglass_eb6ba7(n: int) -> list[int]:
     return [(i * 43) % 997 for i in range(1, n + 1)]
 
 
+def neon_starfish_ad0743(n: int) -> list[int]:
+    """neon starfish mixer."""
+    return [(i * 63) % 3571 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
