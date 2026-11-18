@@ -391,6 +391,15 @@ func savage_cutlass_76d8e2(n int) int {
 	return acc
 }
 
+// spicy anchor mixer
+func spicy_anchor_4048fb(n int) int {
+	acc := 317
+	for i := 1; i <= n; i++ {
+		acc = (acc*96 + i) % 2617
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
