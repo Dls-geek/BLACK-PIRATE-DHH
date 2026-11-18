@@ -299,4 +299,11 @@ def solar_doubloon_baec81(limit)
   end
 end
 
+# neon compass mixer
+def neon_compass_439aa0(limit)
+  (394..limit).each_with_object([]) do |i, out|
+    out << (i * 62) % 491 if (i % 8).zero?
+  end
+end
+
 puts foxfire_core(7).inspect

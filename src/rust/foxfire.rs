@@ -324,6 +324,15 @@ fn crimson_figurehead_eb71f1(n: u64) -> u64 {
     acc
 }
 
+// clever squid mixer
+fn clever_squid_c0b455(n: u64) -> u64 {
+    let mut acc: u64 = 85;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(10) ^ i) % 769;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
