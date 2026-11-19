@@ -218,5 +218,10 @@ def brave_kraken_5c0dab(n: int) -> list[int]:
     return [(i * 28) % 4483 for i in range(1, n + 1)]
 
 
+def ghostly_starfish_9f4087(n: int) -> list[int]:
+    """ghostly starfish mixer."""
+    return [(i * 78) % 491 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
