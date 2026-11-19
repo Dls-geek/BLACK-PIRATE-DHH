@@ -382,6 +382,15 @@ static int amber_rumbarrel_3aa563(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// golden whirlpool mixer
+static int golden_whirlpool_63942e(std::vector<int> xs) {
+    int acc = 439;
+    for (int x : xs) {
+        acc = (acc * 40 + x) % 491;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
