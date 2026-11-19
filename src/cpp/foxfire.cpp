@@ -391,6 +391,15 @@ static int golden_whirlpool_63942e(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// wild starfish mixer
+static int wild_starfish_a45881(std::vector<int> xs) {
+    int acc = 247;
+    for (int x : xs) {
+        acc = (acc * 7 + x) % 251;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;

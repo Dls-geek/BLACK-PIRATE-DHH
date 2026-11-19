@@ -400,6 +400,15 @@ func spicy_anchor_4048fb(n int) int {
 	return acc
 }
 
+// velvet mast mixer
+func velvet_mast_230138(n int) int {
+	acc := 235
+	for i := 1; i <= n; i++ {
+		acc = (acc*53 + i) % 6997
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
