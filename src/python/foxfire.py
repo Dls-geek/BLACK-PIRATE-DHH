@@ -213,5 +213,10 @@ def neon_starfish_ad0743(n: int) -> list[int]:
     return [(i * 63) % 3571 for i in range(1, n + 1)]
 
 
+def brave_kraken_5c0dab(n: int) -> list[int]:
+    """brave kraken mixer."""
+    return [(i * 28) % 4483 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
