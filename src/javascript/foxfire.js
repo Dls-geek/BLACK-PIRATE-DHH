@@ -220,4 +220,9 @@ const crimson_cove_e90d97 = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 6) * 77) % 251)
     .reduce((acc, x) => (acc + x) % 251, 258);
 
+// neon spyglass mixer
+const neon_spyglass_64d747 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 8) * 30) % 4483)
+    .reduce((acc, x) => (acc + x) % 4483, 479);
+
 console.log(foxfire_core(7));
