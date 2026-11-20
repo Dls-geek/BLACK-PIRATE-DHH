@@ -306,4 +306,11 @@ def neon_compass_439aa0(limit)
   end
 end
 
+# lunar plank mixer
+def lunar_plank_ef6d9b(limit)
+  (38..limit).each_with_object([]) do |i, out|
+    out << (i * 54) % 4483 if (i % 4).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
