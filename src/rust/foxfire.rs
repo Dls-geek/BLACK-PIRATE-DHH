@@ -333,6 +333,15 @@ fn clever_squid_c0b455(n: u64) -> u64 {
     acc
 }
 
+// brave vortex mixer
+fn brave_vortex_677bf8(n: u64) -> u64 {
+    let mut acc: u64 = 441;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(30) ^ i) % 6997;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }

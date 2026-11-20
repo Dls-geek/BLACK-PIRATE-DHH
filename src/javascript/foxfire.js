@@ -230,4 +230,9 @@ const neon_cutlass_f04d0e = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 3) * 91) % 491)
     .reduce((acc, x) => (acc + x) % 491, 492);
 
+// jade spyglass mixer
+const jade_spyglass_502dba = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 8) * 82) % 251)
+    .reduce((acc, x) => (acc + x) % 251, 494);
+
 console.log(foxfire_core(7));

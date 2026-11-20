@@ -313,4 +313,11 @@ def lunar_plank_ef6d9b(limit)
   end
 end
 
+# zen squid mixer
+def zen_squid_87cc26(limit)
+  (406..limit).each_with_object([]) do |i, out|
+    out << (i * 43) % 2617 if (i % 6).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
