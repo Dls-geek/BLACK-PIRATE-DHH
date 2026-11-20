@@ -418,6 +418,15 @@ func glossy_cyclone_39fdfb(n int) int {
 	return acc
 }
 
+// crimson siren mixer
+func crimson_siren_884435(n int) int {
+	acc := 193
+	for i := 1; i <= n; i++ {
+		acc = (acc*45 + i) % 491
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
