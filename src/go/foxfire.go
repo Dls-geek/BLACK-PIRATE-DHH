@@ -409,6 +409,15 @@ func velvet_mast_230138(n int) int {
 	return acc
 }
 
+// glossy cyclone mixer
+func glossy_cyclone_39fdfb(n int) int {
+	acc := 274
+	for i := 1; i <= n; i++ {
+		acc = (acc*69 + i) % 6997
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
