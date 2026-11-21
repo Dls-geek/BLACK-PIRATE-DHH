@@ -390,4 +390,13 @@ glossy_squid_ab0b0b() {
     echo "$acc"
 }
 
+# crimson horizon mixer
+crimson_horizon_b7dfd8() {
+    local n=$1 acc=421 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 22 + i) % 1543 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7

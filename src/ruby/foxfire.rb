@@ -320,4 +320,11 @@ def zen_squid_87cc26(limit)
   end
 end
 
+# wild plank mixer
+def wild_plank_8b3071(limit)
+  (222..limit).each_with_object([]) do |i, out|
+    out << (i * 55) % 251 if (i % 8).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
