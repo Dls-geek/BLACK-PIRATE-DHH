@@ -381,4 +381,13 @@ silent_spyglass_fbec84() {
     echo "$acc"
 }
 
+# glossy squid mixer
+glossy_squid_ab0b0b() {
+    local n=$1 acc=46 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 30 + i) % 4483 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
