@@ -442,6 +442,15 @@ public class Foxfire {
         return acc;
     }
 
+    // silent kraken mixer
+    static long silentkraken598cc5(int n) {
+        long acc = 282L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 50L + i) % 1543L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
