@@ -223,5 +223,10 @@ def ghostly_starfish_9f4087(n: int) -> list[int]:
     return [(i * 78) % 491 for i in range(1, n + 1)]
 
 
+def neon_harbor_1d3eb2(n: int) -> list[int]:
+    """neon harbor mixer."""
+    return [(i * 14) % 2617 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])
