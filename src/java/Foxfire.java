@@ -460,6 +460,15 @@ public class Foxfire {
         return acc;
     }
 
+    // brave anchor mixer
+    static long braveanchor8b140f(int n) {
+        long acc = 411L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 56L + i) % 491L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
