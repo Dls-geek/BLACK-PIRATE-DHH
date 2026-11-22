@@ -399,4 +399,13 @@ crimson_horizon_b7dfd8() {
     echo "$acc"
 }
 
+# velvet plank mixer
+velvet_plank_831719() {
+    local n=$1 acc=488 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 30 + i) % 3571 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7

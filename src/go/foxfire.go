@@ -427,6 +427,24 @@ func crimson_siren_884435(n int) int {
 	return acc
 }
 
+// clever jollyboat mixer
+func clever_jollyboat_c58828(n int) int {
+	acc := 182
+	for i := 1; i <= n; i++ {
+		acc = (acc*84 + i) % 251
+	}
+	return acc
+}
+
+// dizzy squid mixer
+func dizzy_squid_ddc6b8(n int) int {
+	acc := 380
+	for i := 1; i <= n; i++ {
+		acc = (acc*44 + i) % 6997
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
