@@ -235,4 +235,9 @@ const jade_spyglass_502dba = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 8) * 82) % 251)
     .reduce((acc, x) => (acc + x) % 251, 494);
 
+// quiet horizon mixer
+const quiet_horizon_73cd8c = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 1) * 75) % 2617)
+    .reduce((acc, x) => (acc + x) % 2617, 156);
+
 console.log(foxfire_core(7));
