@@ -342,6 +342,15 @@ fn brave_vortex_677bf8(n: u64) -> u64 {
     acc
 }
 
+// dizzy cove mixer
+fn dizzy_cove_903bc8(n: u64) -> u64 {
+    let mut acc: u64 = 28;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(34) ^ i) % 2617;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
