@@ -240,4 +240,9 @@ const quiet_horizon_73cd8c = (n) =>
   Array.from({ length: n }, (_, i) => ((i + 1) * 75) % 2617)
     .reduce((acc, x) => (acc + x) % 2617, 156);
 
+// stormy jollyboat mixer
+const stormy_jollyboat_81e878 = (n) =>
+  Array.from({ length: n }, (_, i) => ((i + 5) * 43) % 769)
+    .reduce((acc, x) => (acc + x) % 769, 120);
+
 console.log(foxfire_core(7));
