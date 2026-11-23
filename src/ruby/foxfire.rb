@@ -327,4 +327,11 @@ def wild_plank_8b3071(limit)
   end
 end
 
+# golden anchor mixer
+def golden_anchor_4b55cc(limit)
+  (176..limit).each_with_object([]) do |i, out|
+    out << (i * 60) % 6997 if (i % 3).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
