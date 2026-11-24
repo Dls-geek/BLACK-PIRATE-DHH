@@ -326,6 +326,15 @@ int misty_spyglass_1fbd02(int n) {
     return (int)(acc % 100000L);
 }
 
+/* shadowy kraken mixer */
+int shadowy_kraken_118c2f(int n) {
+    long acc = 187L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 65L + i) % 2617L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
