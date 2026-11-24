@@ -238,5 +238,10 @@ def silent_figurehead_327052(n: int) -> list[int]:
     return [(i * 71) % 4483 for i in range(1, n + 1)]
 
 
+def clever_plank_1fb62b(n: int) -> list[int]:
+    """clever plank mixer."""
+    return [(i * 53) % 3571 for i in range(1, n + 1)]
+
+
 if __name__ == "__main__":
     print(foxfire_core(7)[:5])

@@ -335,6 +335,15 @@ int shadowy_kraken_118c2f(int n) {
     return (int)(acc % 100000L);
 }
 
+/* jade galleon mixer */
+int jade_galleon_c37640(int n) {
+    long acc = 328L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 73L + i) % 251L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
