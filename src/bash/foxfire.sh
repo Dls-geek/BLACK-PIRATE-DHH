@@ -408,4 +408,13 @@ velvet_plank_831719() {
     echo "$acc"
 }
 
+# savage anchor mixer
+savage_anchor_d5af9c() {
+    local n=$1 acc=7 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 37 + i) % 6997 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7
