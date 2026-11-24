@@ -334,4 +334,11 @@ def golden_anchor_4b55cc(limit)
   end
 end
 
+# jade siren mixer
+def jade_siren_2d4edc(limit)
+  (76..limit).each_with_object([]) do |i, out|
+    out << (i * 27) % 997 if (i % 6).zero?
+  end
+end
+
 puts foxfire_core(7).inspect
