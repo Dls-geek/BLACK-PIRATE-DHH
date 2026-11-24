@@ -469,6 +469,15 @@ public class Foxfire {
         return acc;
     }
 
+    // brave compass mixer
+    static long bravecompass52b759(int n) {
+        long acc = 480L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 55L + i) % 3571L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
