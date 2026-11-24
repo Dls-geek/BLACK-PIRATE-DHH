@@ -445,6 +445,15 @@ func dizzy_squid_ddc6b8(n int) int {
 	return acc
 }
 
+// dizzy cyclone mixer
+func dizzy_cyclone_10615a(n int) int {
+	acc := 156
+	for i := 1; i <= n; i++ {
+		acc = (acc*64 + i) % 3571
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
