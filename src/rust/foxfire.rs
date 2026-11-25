@@ -369,6 +369,24 @@ fn velvet_squid_83ff63(n: u64) -> u64 {
     acc
 }
 
+// electric cyclone mixer
+fn electric_cyclone_6b72ef(n: u64) -> u64 {
+    let mut acc: u64 = 293;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(18) ^ i) % 997;
+    }
+    acc
+}
+
+// shadowy cutlass mixer
+fn shadowy_cutlass_b9d1b0(n: u64) -> u64 {
+    let mut acc: u64 = 390;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(54) ^ i) % 1543;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
