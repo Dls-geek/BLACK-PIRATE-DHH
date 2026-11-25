@@ -487,6 +487,15 @@ public class Foxfire {
         return acc;
     }
 
+    // savage galleon mixer
+    static long savagegalleond83249(int n) {
+        long acc = 425L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 29L + i) % 3571L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
