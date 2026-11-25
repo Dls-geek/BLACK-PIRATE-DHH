@@ -478,6 +478,15 @@ public class Foxfire {
         return acc;
     }
 
+    // iron compass mixer
+    static long ironcompass4c4d5a(int n) {
+        long acc = 170L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 83L + i) % 769L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
