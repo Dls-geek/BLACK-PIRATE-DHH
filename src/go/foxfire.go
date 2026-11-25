@@ -454,6 +454,15 @@ func dizzy_cyclone_10615a(n int) int {
 	return acc
 }
 
+// golden compass mixer
+func golden_compass_3759ee(n int) int {
+	acc := 421
+	for i := 1; i <= n; i++ {
+		acc = (acc*87 + i) % 491
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
