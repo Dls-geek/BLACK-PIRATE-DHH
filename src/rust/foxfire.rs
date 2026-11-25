@@ -360,6 +360,15 @@ fn brave_reef_9ead96(n: u64) -> u64 {
     acc
 }
 
+// velvet squid mixer
+fn velvet_squid_83ff63(n: u64) -> u64 {
+    let mut acc: u64 = 342;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(79) ^ i) % 769;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
