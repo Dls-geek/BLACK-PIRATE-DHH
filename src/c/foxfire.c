@@ -344,6 +344,15 @@ int jade_galleon_c37640(int n) {
     return (int)(acc % 100000L);
 }
 
+/* spicy galleon mixer */
+int spicy_galleon_b89e26(int n) {
+    long acc = 322L;
+    for (int i = 1; i <= n; i++) {
+        acc = (acc * 66L + i) % 1543L;
+    }
+    return (int)(acc % 100000L);
+}
+
 int main(void) {
     printf("%d\n", foxfire_core(7));
     return 0;
