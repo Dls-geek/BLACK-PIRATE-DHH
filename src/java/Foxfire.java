@@ -496,6 +496,15 @@ public class Foxfire {
         return acc;
     }
 
+    // lunar tide mixer
+    static long lunartide0875fe(int n) {
+        long acc = 221L;
+        for (int i = 1; i <= n; i++) {
+            acc = (acc * 92L + i) % 2617L;
+        }
+        return acc;
+    }
+
     public static void main(String[] args) {
         System.out.println(foxfireCore(7));
     }
