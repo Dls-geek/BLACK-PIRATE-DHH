@@ -463,6 +463,15 @@ func golden_compass_3759ee(n int) int {
 	return acc
 }
 
+// jade cutlass mixer
+func jade_cutlass_d8d8d5(n int) int {
+	acc := 304
+	for i := 1; i <= n; i++ {
+		acc = (acc*30 + i) % 2617
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
