@@ -417,4 +417,13 @@ savage_anchor_d5af9c() {
     echo "$acc"
 }
 
+# glossy doubloon mixer
+glossy_doubloon_90937d() {
+    local n=$1 acc=334 i
+    for ((i = 1; i <= n; i++)); do
+        acc=$(( (acc * 6 + i) % 4483 ))
+    done
+    echo "$acc"
+}
+
 foxfire_core 7

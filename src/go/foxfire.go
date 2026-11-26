@@ -472,6 +472,15 @@ func jade_cutlass_d8d8d5(n int) int {
 	return acc
 }
 
+// savage mast mixer
+func savage_mast_add14a(n int) int {
+	acc := 71
+	for i := 1; i <= n; i++ {
+		acc = (acc*89 + i) % 4483
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
