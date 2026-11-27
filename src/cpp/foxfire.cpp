@@ -400,6 +400,15 @@ static int wild_starfish_a45881(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// quiet figurehead mixer
+static int quiet_figurehead_e5aeaf(std::vector<int> xs) {
+    int acc = 385;
+    for (int x : xs) {
+        acc = (acc * 65 + x) % 491;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
