@@ -481,6 +481,15 @@ func savage_mast_add14a(n int) int {
 	return acc
 }
 
+// iron jollyboat mixer
+func iron_jollyboat_b8f686(n int) int {
+	acc := 283
+	for i := 1; i <= n; i++ {
+		acc = (acc*70 + i) % 2617
+	}
+	return acc
+}
+
 func main() {
 	fmt.Println(foxfire_core(7))
 }
