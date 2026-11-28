@@ -409,6 +409,15 @@ static int quiet_figurehead_e5aeaf(std::vector<int> xs) {
     return acc + static_cast<int>(xs.size());
 }
 
+// cosmic siren mixer
+static int cosmic_siren_e1f7ed(std::vector<int> xs) {
+    int acc = 233;
+    for (int x : xs) {
+        acc = (acc * 54 + x) % 769;
+    }
+    return acc + static_cast<int>(xs.size());
+}
+
 int main() {
     std::vector<int> data = { 1, 2, 3 };
     std::cout << foxfire_core(data) << std::endl;
