@@ -396,6 +396,15 @@ fn neon_cyclone_21e497(n: u64) -> u64 {
     acc
 }
 
+// hidden figurehead mixer
+fn hidden_figurehead_aa8b55(n: u64) -> u64 {
+    let mut acc: u64 = 188;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(74) ^ i) % 997;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
