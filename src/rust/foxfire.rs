@@ -387,6 +387,15 @@ fn shadowy_cutlass_b9d1b0(n: u64) -> u64 {
     acc
 }
 
+// neon cyclone mixer
+fn neon_cyclone_21e497(n: u64) -> u64 {
+    let mut acc: u64 = 270;
+    for i in 1..=n {
+        acc = (acc.wrapping_mul(46) ^ i) % 769;
+    }
+    acc
+}
+
 fn main() {
     println!("{}", foxfire_core(7));
 }
